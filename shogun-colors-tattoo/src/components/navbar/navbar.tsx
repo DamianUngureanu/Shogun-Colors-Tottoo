@@ -26,6 +26,20 @@ const Navbar = ({
   language,
   setLanguage,
 }: NavbarProps) => {
+  if (width > 900)
+    return (
+      <NavbarDesktop
+        width={width}
+        height={height}
+        language={language}
+        setLanguage={(lang) => setLanguage(lang)}
+        homeText={homeText}
+        aboutText={aboutText}
+        galleryText={galleryText}
+        questionsText={questionsText}
+        contactText={contactText}
+      />
+    );
   return (
     <NavbarMobile
       width={width}
