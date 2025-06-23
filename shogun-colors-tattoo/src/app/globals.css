@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.15s;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  color: var(--color);
+}
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+h1 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+label {
+  font-size: 1.25rem;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  overflow-x: clip;
+  z-index: -100;
+  position: relative;
+  height: min-content;
+  scroll-behavior: smooth;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: var(--background);
+    opacity: 0.9;
+    z-index: -100;
+  }
+}
+@font-face {
+  font-family: "Gothic";
+  src: url("../fonts/CloisterBlack.ttf");
+}
+:root {
+  --font-size-6: calc(var(--font-size-3) * 1.618 * 1.618 * 1.618);
+  --font-size-5: calc(var(--font-size-3) * 1.618 * 1.618);
+  --font-size-4: calc(var(--font-size-3) * 1.618);
+  --font-size-3: 1rem;
+  --font-size-2: calc(var(--font-size-3) / 1.618);
+  --font-size-1: calc(var(--font-size-3) / 1.618) / 1.618;
+  --max-width: 500px;
+  --light-color: #fcfdee;
+  --dark-color: #131211;
+  --color-accent-simple: #db0101;
+  --color-accent-simple-second: #fa3333;
+  --color-accent: linear-gradient(
+    90deg,
+    var(--color-accent-simple-second),
+    var(--color-accent-simple),
+    var(--color-accent-simple-second)
+  );
+  --transparent-white: rgba(255, 255, 255, 0.5);
+  --transparent-black: rgba(0, 0, 0, 0.5);
+
+  --color-values: 19, 18, 17;
+  --color: var(--dark-color);
+  --background: rgb(223, 251, 255);
+  --background-secondary: rgb(1, 1, 26);
+  --background-tertiary: rgb(210, 209, 250);
+  --background-transparent: color-mix(
+    oklab,
+    var(--transparent-white) 50%,
+    var(--background) 50%
+  );
+  --background-secondary-transparent: color-mix(
+    in oklab,
+    var(--transparent-white) 20%,
+    var(--background-secondary) 80%
+  );
+  --background-hover: color-mix(
+    in oklab,
+    var(--light-color) 60%,
+    var(--color-accent) 40%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    &::after {
+      opacity: 0.98;
+    }
+  }
+  :root {
+    --color-values: 252, 253, 238;
+    --color: var(--light-color);
+    --background: rgb(0, 11, 46);
+    --background-secondary: #000009;
+    --background-tertiary: rgb(1, 23, 63);
+    --background-transparent: color-mix(
+      in oklab,
+      var(--transparent-black) 20%,
+      var(--background) 80%
+    );
+    --background-secondary-transparent: color-mix(
+      in oklab,
+      var(--transparent-black) 20%,
+      var(--background-secondary) 80%
+    );
+    --background-hover: color-mix(
+      in oklab,
+      var(--dark-color) 60%,
+      var(--color-accent) 40%
+    );
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Lățimea scroll-barului vertical */
+  height: 12px; /* Înălțimea scroll-barului orizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Culoarea fundalului scroll-barului */
+  border-radius: 10px; /* Rounding for track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent); /* Culoarea thumb-ului scroll-barului */
+  border-radius: 10px; /* Rounding for thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(
+    in oklab,
+    var(--color-accent) 70%,
+    rgb(0, 0, 0) 30%
+  ); /* Culoarea thumb-ului la hover */
+}

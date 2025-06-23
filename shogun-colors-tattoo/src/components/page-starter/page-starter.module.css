@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 100vw;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: var(--background-transparent);
+  }
+}

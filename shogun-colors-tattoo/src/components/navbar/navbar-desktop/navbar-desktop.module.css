@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+
+  position: fixed;
+  background: transparent;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & section {
+    width: 900px;
+  }
+
+  & nav {
+    width: 950px;
+    padding-bottom: 100px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -5px 0 0 0;
+      background: var(--background-secondary-transparent);
+      filter: blur(2px);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      z-index: -1;
+    }
+
+    & a {
+      flex: 1;
+
+      & button {
+        width: 100%;
+        border: none;
+        padding: 20px;
+        cursor: pointer;
+        font-size: var(--font-size-5);
+        color: var(--light-color);
+        background: transparent;
+        font-family: "Gothic";
+        text-shadow: 2px 2px var(--color-accent-simple);
+
+        &:hover {
+          transform: translateX(-2px) translateY(-2px);
+          text-shadow: 4px 4px var(--color-accent-simple);
+        }
+      }
+    }
+  }
+}
+
+.eyebrow1 {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  overflow: visible;
+  filter: drop-shadow(4px 4px var(--color-accent-simple))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary));
+}

@@ -1,0 +1,61 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: var(--background-secondary-transparent);
+  z-index: 100;
+
+  animation: startNavbar 1s cubic-bezier(0.58, 1.16, 0.77, 0.37) 0.9s forwards;
+  animation-fill-mode: backwards;
+
+  & nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    & a {
+      & button {
+        background: none;
+        border: none;
+        font-family: "Gothic";
+        font-size: var(--font-size-5);
+        color: var(--light-color);
+        text-shadow: 2.5px 2.5px var(--color-accent-simple);
+      }
+    }
+  }
+}
+.closeContainer {
+  transform: translateY(-95%);
+}
+
+.eyebrow1 {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  overflow: visible;
+  filter: drop-shadow(2px 2px var(--color-accent-simple));
+}
+.closeEyebrow1 {
+  transform: translateY(-35%);
+  filter: drop-shadow(2px 2px var(--color-accent-simple))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary));
+}
+
+@keyframes startNavbar {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-99%);
+  }
+}
