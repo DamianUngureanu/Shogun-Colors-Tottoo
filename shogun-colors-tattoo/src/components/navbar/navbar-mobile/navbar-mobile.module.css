@@ -30,18 +30,19 @@
   }
 }
 .closeContainer {
-  transform: translateY(-95%);
+  transform: translateY(calc(-100% - 5vw));
+  box-shadow: 0 10px 1px 10vw var(--background-secondary);
 }
 
 .eyebrow1 {
   position: absolute;
   top: 100%;
-  transform: translateY(-100%);
+  transform: translateY(0%);
   overflow: visible;
   filter: drop-shadow(2px 2px var(--color-accent-simple));
 }
 .closeEyebrow1 {
-  transform: translateY(-35%);
+  transform: translateY(0%);
   filter: drop-shadow(2px 2px var(--color-accent-simple))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
@@ -50,7 +51,12 @@
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary));
 }
-
+.closeIcon {
+  filter: drop-shadow(2px 2px var(--color-accent-simple));
+  position: absolute;
+  top: 30px;
+  right: 25px;
+}
 @keyframes startNavbar {
   from {
     transform: translateY(0%);

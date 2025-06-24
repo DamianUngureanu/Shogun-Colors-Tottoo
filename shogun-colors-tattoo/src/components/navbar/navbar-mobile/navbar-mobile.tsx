@@ -4,6 +4,7 @@ import { Language } from "@/languages/language-type";
 import Link from "next/link";
 import LanguageSelect from "@/components/language-select";
 import NavbarGraphicDesign from "../navbar-graphic-design";
+import CloseIconProps from "@/svgs/close-icon";
 import classNames from "classnames";
 
 interface NavbarMobileProps {
@@ -38,6 +39,12 @@ const NavbarMobile = ({
       )}
     >
       <nav>
+        <CloseIconProps
+          width={40}
+          color={"#fcfdee"}
+          className={classes.closeIcon}
+          onClick={() => setIsOpen(false)}
+        />
         <Link href="/">
           <button>{homeText}</button>
         </Link>
@@ -57,6 +64,7 @@ const NavbarMobile = ({
           options={["ro", "en"]}
           language={language}
           onChage={(lang) => setLanguage(lang)}
+          position="bottom"
         />
       </nav>
       <NavbarGraphicDesign
@@ -65,7 +73,7 @@ const NavbarMobile = ({
           classes.eyebrow1,
           !isOpen && classes.closeEyebrow1
         )}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen(true)}
       />
     </header>
   );

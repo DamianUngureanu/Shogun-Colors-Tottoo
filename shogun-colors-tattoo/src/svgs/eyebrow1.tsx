@@ -28,18 +28,6 @@ const Eyebrow1 = ({
       className={classNames(className && className)}
       {...rest}
     >
-      {/* <defs>
-        <filter id="outline" filterUnits="userSpaceOnUse">
-          <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="#000009" />
-          <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="#000009" />
-          <feDropShadow dx="0" dy="0" stdDeviation="1" floodColor="#000009" />
-          <feDropShadow dx="0" dy="0" stdDeviation="1" floodColor="#000009" />
-          <feDropShadow dx="0" dy="0" stdDeviation="1" floodColor="#000009" />
-          <feDropShadow dx="0" dy="0" stdDeviation="1" floodColor="#000009" />
-          <feDropShadow dx="0" dy="0" stdDeviation="1" floodColor="#000009" />
-        </filter>
-      </defs> */}
-      {/* <g filter="url(#outline)"> */}
       <path
         d="M-2.3748 142.7522c53.7211 96.3936 449.4312-39.3201 503.1521 57.0735C450.348 141.0542 52.224 249.1784-2.3748 142.7522z"
         fill={color}
