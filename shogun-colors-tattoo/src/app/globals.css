@@ -122,7 +122,9 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; /* Culoarea fundalului scroll-barului */
+  background: var(
+    --background-secondary
+  ); /* Culoarea fundalului scroll-barului */
   border-radius: 10px; /* Rounding for track */
 }
 

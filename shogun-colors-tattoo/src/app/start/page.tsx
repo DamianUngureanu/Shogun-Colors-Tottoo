@@ -25,7 +25,7 @@ const Start = () => {
         questionsText={t("questions")}
         contactText={t("contact")}
       />
-      <PageStarter />
+      <PageStarter width={width} />
       buna
     </main>
   );

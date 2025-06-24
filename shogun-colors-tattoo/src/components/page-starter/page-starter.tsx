@@ -1,14 +1,14 @@
 import React from "react";
 import classes from "./page-starter.module.css";
-import backgound from "@/public/backgound.jpg";
+import background from "@/public/backgound.jpg";
+import Container from "../container";
 
-const PageStarter = () => {
-  return (
-    <div
-      style={{ backgroundImage: `url(${backgound.src})` }}
-      className={classes.container}
-    ></div>
-  );
+interface PageStarterProps {
+  width: number;
+}
+
+const PageStarter = ({ width }: PageStarterProps) => {
+  return <Container width={width} background={background}></Container>;
 };
 
 export default PageStarter;

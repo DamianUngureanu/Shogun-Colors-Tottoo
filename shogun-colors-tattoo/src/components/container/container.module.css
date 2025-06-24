@@ -1,0 +1,44 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: var(--background-transparent);
+    box-shadow: inset 0 0px 50px 30px var(--background-secondary);
+  }
+}
+.cornerLeft {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  z-index: 90;
+  transform: scaleY(-1);
+  filter: drop-shadow(4px -4px var(--color-accent-simple))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary));
+}
+.cornerRight {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  z-index: 90;
+  transform: scaleY(-1) scaleX(-1);
+  filter: drop-shadow(-4px -4px var(--color-accent-simple))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary))
+    drop-shadow(0 0 7px var(--background-secondary));
+}
