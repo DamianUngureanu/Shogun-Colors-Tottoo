@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - env(safe-area-inset-bottom));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
