@@ -25,6 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+      />
+      <meta name="theme-color" content="#000000" />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <I18nProvider>{children}</I18nProvider>
       </body>
