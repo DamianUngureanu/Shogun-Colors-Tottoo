@@ -25,8 +25,6 @@
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
-    drop-shadow(0 0 7px var(--background-secondary))
-    drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary));
 }
 .cornerTopRight {
@@ -36,8 +34,6 @@
   z-index: 90;
   transform: scaleX(-1);
   filter: drop-shadow(-0.2vw 0.2vw var(--shadow-color))
-    drop-shadow(0 0 7px var(--background-secondary))
-    drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
@@ -53,8 +49,6 @@
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
-    drop-shadow(0 0 7px var(--background-secondary))
-    drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary));
 }
 .cornerBottomRight {
@@ -64,8 +58,6 @@
   z-index: 90;
   transform: scaleY(-1) scaleX(-1);
   filter: drop-shadow(-0.2vw -0.2vw var(--shadow-color))
-    drop-shadow(0 0 7px var(--background-secondary))
-    drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
