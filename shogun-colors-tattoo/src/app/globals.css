@@ -12,14 +12,25 @@ a {
   color: var(--color);
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-6);
+  color: var(--light-color);
+  font-family: "Gothic";
+  text-shadow: 3px 3px var(--shadow-color);
+  font-weight: 100;
+}
+h2 {
+  font-size: var(--font-size-5);
+  color: var(--light-color);
+  font-family: "Gothic";
+  text-shadow: 3px 3px var(--shadow-color);
+  font-weight: 100;
 }
 p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-3);
   line-height: 1.75rem;
 }
 label {
-  font-size: 1.25rem;
+  font-size: var(--font-size-3);
 }
 body {
   min-height: 100vh;
@@ -44,23 +55,24 @@ body {
   src: url("../fonts/CloisterBlack.ttf");
 }
 :root {
-  --font-size-6: calc(var(--font-size-3) * 1.618 * 1.618 * 1.618);
+  --font-size-6: calc(var(--font-size-3) * 1.618 * 1.618 * 1.618 * 1.618);
   --font-size-5: calc(var(--font-size-3) * 1.618 * 1.618);
   --font-size-4: calc(var(--font-size-3) * 1.618);
   --font-size-3: 1rem;
   --font-size-2: calc(var(--font-size-3) / 1.618);
   --font-size-1: calc(var(--font-size-3) / 1.618) / 1.618;
   --max-width: 500px;
-  --light-color: #fcfdee;
+  --light-color: #e4e7e7;
   --dark-color: #131211;
-  --color-accent-simple: #db0101;
-  --color-accent-simple-second: #fa3333;
+  --color-accent-simple: rgb(130, 149, 156);
+  --color-accent-simple-second: rgb(219, 231, 245);
   --color-accent: linear-gradient(
     90deg,
     var(--color-accent-simple-second),
     var(--color-accent-simple),
     var(--color-accent-simple-second)
   );
+  --shadow-color: rgb(153, 10, 15);
   --transparent-white: rgba(255, 255, 255, 0.5);
   --transparent-black: rgba(0, 0, 0, 0.5);
 

@@ -24,9 +24,9 @@ const Corner = ({ width, height, color, className, ...rest }: CornerProps) => {
     >
       <defs>
         <linearGradient id="myGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="rgb(133, 153, 160)" />
-          <stop offset="50%" stopColor="rgb(217,231,244)" />
-          <stop offset="100%" stopColor="rgb(133, 153, 160)" />
+          <stop offset="25%" stopColor="rgb(130, 149, 156)" />
+          <stop offset="50%" stopColor="rgb(219, 231, 245)" />
+          <stop offset="75%" stopColor="rgb(130, 149, 156)" />
         </linearGradient>
         <mask id="svgMaskCorner">
           <g fill={color}>

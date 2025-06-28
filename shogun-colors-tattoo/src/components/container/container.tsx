@@ -2,11 +2,13 @@ import React from "react";
 import classes from "./container.module.css";
 import Corner from "@/svgs/corner";
 import { StaticImageData } from "next/image";
+import classNames from "classnames";
 
 interface ContainerProps {
   width: number;
   background?: StaticImageData;
   corners: boolean[];
+  className?: string;
   children?: any;
 }
 
@@ -14,12 +16,13 @@ const Container = ({
   width,
   background,
   corners,
+  className,
   children,
 }: ContainerProps) => {
   return (
     <div
       style={background && { backgroundImage: `url(${background.src})` }}
-      className={classes.container}
+      className={classNames(classes.container, className && className)}
     >
       {corners[0] && (
         <Corner

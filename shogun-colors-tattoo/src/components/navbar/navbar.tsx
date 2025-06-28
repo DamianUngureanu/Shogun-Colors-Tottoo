@@ -11,6 +11,8 @@ interface NavbarProps {
   contactText: string;
   width: number;
   height: number;
+  scrollPosition: number;
+  isScrollingUp: boolean;
   language: string;
   setLanguage: (lang: Language) => void;
 }
@@ -23,6 +25,8 @@ const Navbar = ({
   contactText,
   width,
   height,
+  scrollPosition,
+  isScrollingUp,
   language,
   setLanguage,
 }: NavbarProps) => {
@@ -38,6 +42,8 @@ const Navbar = ({
         galleryText={galleryText}
         questionsText={questionsText}
         contactText={contactText}
+        scrollPosition={scrollPosition}
+        isScrollingUp={isScrollingUp}
       />
     );
   return (

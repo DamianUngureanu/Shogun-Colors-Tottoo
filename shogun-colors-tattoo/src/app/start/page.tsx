@@ -6,9 +6,12 @@ import PageStarter from "@/components/page-starter";
 import { useWindowDimensions } from "@/hooks/use-window-dimension";
 import usePageLoaded from "@/hooks/use-page-loaded";
 import { useLanguage } from "@/languages";
+import useWindowScroll from "@/hooks/use-window-scroll";
+import Colections from "./colections";
 
 const Start = () => {
   const { width, height, isLoading } = useWindowDimensions();
+  const { scrollPosition, isScrollingUp } = useWindowScroll();
   const isLoade = usePageLoaded();
   const { t, setLanguage, language } = useLanguage();
   if (isLoading && isLoade) return <div>is loading</div>;
@@ -24,8 +27,16 @@ const Start = () => {
         galleryText={t("gallery")}
         questionsText={t("questions")}
         contactText={t("contact")}
+        scrollPosition={scrollPosition}
+        isScrollingUp={isScrollingUp}
       />
       <PageStarter width={width} />
+      <Colections
+        titleText={"buna"}
+        openText={""}
+        width={width}
+        colectionMedia={[]}
+      ></Colections>
       buna
     </main>
   );

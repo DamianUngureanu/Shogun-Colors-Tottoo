@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavbarGraphicDesign from "../navbar-graphic-design";
 import LanguageSelect from "@/components/language-select";
 import { Language } from "@/languages/language-type";
+import classNames from "classnames";
 
 interface NavbarDesktopProps {
   homeText: string;
@@ -13,6 +14,8 @@ interface NavbarDesktopProps {
   contactText: string;
   width: number;
   height: number;
+  scrollPosition: number;
+  isScrollingUp: boolean;
   language: string;
   setLanguage: (lang: Language) => void;
 }
@@ -24,15 +27,22 @@ const NavbarDesktop = ({
   questionsText,
   contactText,
   width,
+  scrollPosition,
+  isScrollingUp,
   height,
   language,
   setLanguage,
 }: NavbarDesktopProps) => {
   return (
-    <header className={classes.container}>
+    <header
+      className={classNames(
+        classes.container,
+        scrollPosition > 200 && !isScrollingUp && classes.navHidden
+      )}
+    >
       <section>
         <NavbarGraphicDesign
-          width={1000}
+          width={700}
           height={height}
           className={classes.eyebrow1}
         />

@@ -1,0 +1,10 @@
+.container {
+  min-width: 500px;
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-5);
+  color: var(--light-color);
+  background: transparent;
+  font-family: "Gothic";
+  text-shadow: 2px 2px var(--shadow-color);
+}

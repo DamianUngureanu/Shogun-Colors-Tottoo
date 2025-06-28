@@ -1,9 +1,10 @@
 .container {
   width: 100vw;
-  height: calc(100vh - env(safe-area-inset-bottom));
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   position: relative;
 
   &::after {
@@ -20,7 +21,7 @@
   top: 3px;
   left: 3px;
   z-index: 90;
-  filter: drop-shadow(4px 4px var(--color-accent-simple))
+  filter: drop-shadow(0.2vw 0.2vw var(--shadow-color))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
@@ -34,7 +35,7 @@
   right: 6px;
   z-index: 90;
   transform: scaleX(-1);
-  filter: drop-shadow(-4px 4px var(--color-accent-simple))
+  filter: drop-shadow(-0.2vw 0.2vw var(--shadow-color))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
@@ -48,7 +49,7 @@
   left: 3px;
   z-index: 90;
   transform: scaleY(-1);
-  filter: drop-shadow(4px -4px var(--color-accent-simple))
+  filter: drop-shadow(0.2vw -0.2vw var(--shadow-color))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
@@ -62,7 +63,7 @@
   right: 6px;
   z-index: 90;
   transform: scaleY(-1) scaleX(-1);
-  filter: drop-shadow(-4px -4px var(--color-accent-simple))
+  filter: drop-shadow(-0.2vw -0.2vw var(--shadow-color))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary))

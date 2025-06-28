@@ -4,7 +4,9 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 30vw;
-  height: 30vw;
+  max-width: 465px;
+  min-width: 235px;
+  aspect-ratio: 1/1;
   z-index: 5;
 
   & img {
