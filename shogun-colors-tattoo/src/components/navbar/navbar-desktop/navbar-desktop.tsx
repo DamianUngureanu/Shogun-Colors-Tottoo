@@ -42,7 +42,7 @@ const NavbarDesktop = ({
     >
       <section>
         <NavbarGraphicDesign
-          width={1000}
+          width={950}
           height={height}
           className={classes.eyebrow1}
         />

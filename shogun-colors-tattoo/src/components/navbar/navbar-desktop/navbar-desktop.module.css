@@ -11,7 +11,7 @@
   align-items: center;
 
   & section {
-    width: 900px;
+    width: auto;
   }
 
   & nav {
@@ -29,8 +29,8 @@
       background: var(--background-secondary-transparent);
       backdrop-filter: blur(7px);
       -webkit-backdrop-filter: blur(7px);
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
       box-shadow: 0 0 2px 3px var(--background-secondary-transparent);
       overflow: visible;
       z-index: -1;
@@ -48,11 +48,17 @@
         color: var(--light-color);
         background: transparent;
         font-family: "Gothic";
-        text-shadow: 2px 2px var(--shadow-color);
+        text-shadow: 2px 2px var(--shadow-color),
+          0 0 30px var(--background-secondary),
+          0 0 30px var(--background-secondary),
+          0 0 30px var(--background-secondary);
 
         &:hover {
           transform: translateX(-2px) translateY(-2px);
-          text-shadow: 4px 4px var(--shadow-color);
+          text-shadow: 4px 4px var(--shadow-color),
+            0 0 30px var(--background-secondary),
+            0 0 30px var(--background-secondary),
+            0 0 30px var(--background-secondary);
         }
       }
     }
@@ -71,5 +77,5 @@
     drop-shadow(0 0 7px var(--background-secondary));
 }
 .navHidden {
-  top: -100px;
+  transform: translateY(-93%);
 }

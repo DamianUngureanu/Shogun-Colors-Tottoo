@@ -8,6 +8,7 @@ import usePageLoaded from "@/hooks/use-page-loaded";
 import { useLanguage } from "@/languages";
 import useWindowScroll from "@/hooks/use-window-scroll";
 import Colections from "./colections";
+import ColectionData from "@/data/colection-data";
 
 const Start = () => {
   const { width, height, isLoading } = useWindowDimensions();
@@ -35,9 +36,9 @@ const Start = () => {
         titleText={"buna"}
         openText={""}
         width={width}
-        colectionMedia={[]}
+        colectionMedia={ColectionData}
+        language={language}
       ></Colections>
-      buna
     </main>
   );
 };
