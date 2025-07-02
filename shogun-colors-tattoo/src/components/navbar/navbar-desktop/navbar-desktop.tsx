@@ -49,19 +49,59 @@ const NavbarDesktop = ({
       </section>
       <nav>
         <Link href="/">
-          <button>{homeText}</button>
+          <button
+            style={
+              width <= 1350
+                ? { fontSize: " var(--font-size-5)" }
+                : { fontSize: "50px" }
+            }
+          >
+            {homeText}
+          </button>
         </Link>
         <Link href="/">
-          <button>{aboutText}</button>
+          <button
+            style={
+              width <= 1350
+                ? { fontSize: " var(--font-size-5)" }
+                : { fontSize: "50px" }
+            }
+          >
+            {aboutText}
+          </button>
         </Link>
         <Link href="/">
-          <button>{galleryText}</button>
+          <button
+            style={
+              width <= 1350
+                ? { fontSize: " var(--font-size-5)" }
+                : { fontSize: "50px" }
+            }
+          >
+            {galleryText}
+          </button>
         </Link>
         <Link href="/">
-          <button>{questionsText}</button>
+          <button
+            style={
+              width <= 1350
+                ? { fontSize: " var(--font-size-5)" }
+                : { fontSize: "50px" }
+            }
+          >
+            {questionsText}
+          </button>
         </Link>
         <Link href="/">
-          <button>{contactText}</button>
+          <button
+            style={
+              width <= 1350
+                ? { fontSize: " var(--font-size-5)" }
+                : { fontSize: "50px" }
+            }
+          >
+            {contactText}
+          </button>
         </Link>
         <LanguageSelect
           options={["ro", "en"]}

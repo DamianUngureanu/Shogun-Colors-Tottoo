@@ -27,7 +27,7 @@
         font-family: "Gothic";
         font-size: var(--font-size-6);
         color: var(--light-color);
-        text-shadow: 2.5px 2.5px var(--color-accent-simple);
+        text-shadow: 2.5px 2.5px var(--shadow-color);
       }
     }
   }

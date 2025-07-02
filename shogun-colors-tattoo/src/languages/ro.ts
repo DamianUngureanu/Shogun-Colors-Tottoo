@@ -5,6 +5,7 @@ const ro = {
   questions: "Întrebari",
   contact: "Contact",
   menu: "Meniu",
+  more: "Mai multe",
 };
 
 export default ro;

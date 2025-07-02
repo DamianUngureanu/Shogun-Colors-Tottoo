@@ -5,33 +5,48 @@ export const getWindowDimensions = () => {
     return { width: 0, height: 0 };
   }
 
-  const { innerWidth: width = 0, innerHeight: height = 0 } = window;
-  return { width, height };
+  return {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  };
 };
 
 export const useWindowDimensions = () => {
-  const isClient = typeof window !== "undefined";
-
-  const [dimensions, setDimensions] = useState(() =>
-    isClient ? { width: 0, height: 0 } : { width: 0, height: 0 }
-  );
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (!isClient) return;
+    let frameId: number;
 
     const handleResize = () => {
-      const next = getWindowDimensions();
-      setDimensions(next);
-      setIsLoading(false);
+      // Debounce cu requestAnimationFrame pentru stabilitate
+      cancelAnimationFrame(frameId);
+      frameId = requestAnimationFrame(() => {
+        setDimensions(getWindowDimensions());
+        setIsLoading(false);
+      });
     };
 
-    // Set initial dimensions on mount
-    handleResize();
+    // Asigură-te că layout-ul e complet
+    const onLoad = () => {
+      handleResize();
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [isClient]);
+      // Ascultă redimensionările ulterioare
+      window.addEventListener("resize", handleResize);
+    };
+
+    if (document.readyState === "complete") {
+      onLoad();
+    } else {
+      window.addEventListener("load", onLoad);
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", onLoad);
+      cancelAnimationFrame(frameId);
+    };
+  }, []);
 
   return { ...dimensions, isLoading };
 };

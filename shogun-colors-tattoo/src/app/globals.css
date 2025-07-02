@@ -35,7 +35,7 @@ label {
 body {
   min-height: 100vh;
   background-color: var(--background);
-  overflow-x: clip;
+  overflow-x: hidden;
   z-index: -100;
   position: relative;
   height: min-content;
@@ -56,7 +56,7 @@ body {
 }
 :root {
   --font-size-6: calc(var(--font-size-3) * 1.618 * 1.618 * 1.618 * 1.618);
-  --font-size-5: calc(var(--font-size-3) * 1.618 * 1.618);
+  --font-size-5: calc(var(--font-size-3) * 1.618 * 1.618 * 1.309);
   --font-size-4: calc(var(--font-size-3) * 1.618);
   --font-size-3: max(1vw, 10px);
   --font-size-2: calc(var(--font-size-3) / 1.618);

@@ -5,6 +5,7 @@ const en = {
   questions: "Questions",
   contact: "Contact",
   menu: "Menu",
+  more: "More",
 };
 
 export default en;

@@ -33,16 +33,15 @@ const Colections = ({
       corners={[true, true, true, true]}
       className={classes.container}
     >
-      <div
-        className={classes.background}
-        style={{ backgroundImage: `url(${background.src})` }}
-      ></div>
       <div className={classes.content}>
         <h1>Colections</h1>
         <span className={classes.contor}>
           {colectionMedia.map((element, index) => {
-            if (cont * -1 == index) return <FaDotCircle />;
-            else return <FaRegCircle onClick={() => setCont(index * -1)} />;
+            if (cont * -1 == index) return <FaDotCircle key={index} />;
+            else
+              return (
+                <FaRegCircle onClick={() => setCont(index * -1)} key={index} />
+              );
           })}
         </span>
         <div className={classes.slider}>

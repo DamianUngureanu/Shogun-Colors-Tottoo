@@ -8,6 +8,7 @@ interface ContainerProps {
   width: number;
   background?: StaticImageData;
   corners: boolean[];
+  isBackdrop?: boolean;
   className?: string;
   children?: any;
 }
@@ -16,6 +17,7 @@ const Container = ({
   width,
   background,
   corners,
+  isBackdrop = true,
   className,
   children,
 }: ContainerProps) => {
