@@ -44,69 +44,60 @@ const Colections = ({
               );
           })}
         </span>
-        <div className={classes.slider}>
-          {colectionMedia.map((element, index) => {
-            return (
-              <div
-                className={classes.sliderItem}
-                key={index}
-                style={{ "--itemIndex": cont + index } as React.CSSProperties}
-              >
-                <h2>{language == "ro" ? element.titleRo : element.titleEn}</h2>
-                <div className={classes.mediaPhotos}>
-                  <section>
-                    <img
-                      src={element.mediaPaths.image1Path}
-                      alt="first colection image"
-                    />
-                  </section>
-                  <section>
-                    <img
-                      src={element.mediaPaths.image2Path}
-                      alt="second colection image"
-                    />
-                  </section>
-                  <section>
-                    <img
-                      src={element.mediaPaths.image3Path}
-                      alt="third colection image"
-                    />
-                  </section>
+        <div className={classes.sliderContainer}>
+          <div className={classes.slider}>
+            {colectionMedia.map((element, index) => {
+              return (
+                <div
+                  className={classes.sliderItem}
+                  key={index}
+                  style={{ "--itemIndex": cont + index } as React.CSSProperties}
+                >
+                  <h2>
+                    {language == "ro" ? element.titleRo : element.titleEn}
+                  </h2>
+                  <div className={classes.mediaPhotos}>
+                    <section>
+                      <img
+                        src={element.mediaPaths.image1Path}
+                        alt="first colection image"
+                      />
+                    </section>
+                    <section>
+                      <img
+                        src={element.mediaPaths.image2Path}
+                        alt="second colection image"
+                      />
+                    </section>
+                    <section>
+                      <img
+                        src={element.mediaPaths.image3Path}
+                        alt="third colection image"
+                      />
+                    </section>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+          <Arrow
+            width={width < 1000 ? width / 10 : 100}
+            color={"#ffffff"}
+            className={classes.rightArrow}
+            onClick={() => {
+              cont > colectionMedia.length * -1 + 1 ? setCont(cont - 1) : {};
+            }}
+          />
+          <Arrow
+            width={width < 1000 ? width / 10 : 100}
+            color={"#ffffff"}
+            className={classes.leftArrow}
+            onClick={() => (cont < 0 ? setCont(cont + 1) : {})}
+          />
         </div>
-        {/* <h1>Colections</h1>
-        <h2>Colection 1</h2>
-        <div className={classes.mediaPhotos}>
-          <section>
-            <img src={image1.src} alt="first colection image" />
-          </section>
-          <section>
-            <img src={image2.src} alt="second colection image" />
-          </section>
-          <section>
-            <img src={image3.src} alt="third colection image" />
-          </section>
-        </div> */}
         <Link href={""}>
           <Button className={classes.openButton}>Open</Button>
         </Link>
-        <Arrow
-          width={width < 1000 ? width / 10 : 100}
-          color={"#ffffff"}
-          className={classes.rightArrow}
-          onClick={() => {
-            cont > colectionMedia.length * -1 + 1 ? setCont(cont - 1) : {};
-          }}
-        />
-        <Arrow
-          width={width < 1000 ? width / 10 : 100}
-          color={"#ffffff"}
-          className={classes.leftArrow}
-          onClick={() => (cont < 0 ? setCont(cont + 1) : {})}
-        />
       </div>
     </Container>
   );

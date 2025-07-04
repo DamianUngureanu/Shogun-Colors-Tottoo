@@ -20,13 +20,19 @@
   flex-direction: column;
   align-items: center;
 }
-.slider {
+.sliderContainer {
   width: 70vw;
   height: 70vh;
+  position: relative;
+}
+.slider {
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 .sliderItem {
+  height: 100%;
   position: absolute;
   top: 0;
   left: calc(100% * var(--itemIndex));
@@ -44,13 +50,14 @@
 .rightArrow {
   position: absolute;
   top: 50%;
-  right: 2vw;
+  transform: translateY(-25%) translateX(120%);
+  right: 0;
   cursor: pointer;
   filter: drop-shadow(0.2vw 0.2vw var(--shadow-color))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary));
   &:hover {
-    transform: translateX(-0.1vw) translateY(-0.1vw);
+    transform: translateX(calc(-0.1vw + 120%)) translateY(calc(-0.1vw - 25%));
     filter: drop-shadow(0.27vw 0.27vw var(--shadow-color))
       drop-shadow(0 0 7px var(--background-secondary))
       drop-shadow(0 0 7px var(--background-secondary));
@@ -59,14 +66,15 @@
 .leftArrow {
   position: absolute;
   top: 50%;
-  transform: rotateZ(180deg);
-  left: 2vw;
+  transform: rotateZ(180deg) translateY(25%) translateX(120%);
+  left: 0;
   cursor: pointer;
   filter: drop-shadow(-0.2vw -0.2vw var(--shadow-color))
     drop-shadow(0 0 7px var(--background-secondary))
     drop-shadow(0 0 7px var(--background-secondary));
   &:hover {
-    transform: translateX(-0.1vw) translateY(-0.1vw) rotateZ(180deg);
+    transform: translateX(calc(-0.1vw - 120%)) translateY(calc(-0.1vw - 25%))
+      rotateZ(180deg);
     filter: drop-shadow(-0.27vw -0.27vw var(--shadow-color))
       drop-shadow(0 0 7px var(--background-secondary))
       drop-shadow(0 0 7px var(--background-secondary));
@@ -169,6 +177,10 @@
         width: 100%;
         object-fit: cover;
         object-position: center;
+      }
+
+      &:hover {
+        flex: 1.1;
       }
     }
   }

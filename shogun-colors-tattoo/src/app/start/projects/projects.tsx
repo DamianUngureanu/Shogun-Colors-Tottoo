@@ -51,11 +51,6 @@ const Projects = ({
         {!isMobile && <p>{image2Story}</p>}
         {isMobile && <Button>{moreText}</Button>}
       </section>
-      <section style={{ zIndex: 3 }}>
-        <img src={bestImage3.src} alt="best tattoo 3" />
-        {!isMobile && <p>{image3Story}</p>}
-        {isMobile && <Button>{moreText}</Button>}
-      </section>
     </Container>
   );
 };
