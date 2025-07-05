@@ -6,6 +6,15 @@ const en = {
   contact: "Contact",
   menu: "Menu",
   more: "More",
+  services: "Services",
+  media: "Media",
+  moto: "See you at the next one!",
+  whatsapp: "Whatsapp",
+  email: "E-mail",
+  location: "Location",
+  instagram: "Instagram",
+  facebook: "Facebook",
+  youtube: "YouTube",
 };
 
 export default en;

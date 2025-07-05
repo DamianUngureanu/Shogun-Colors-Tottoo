@@ -16,6 +16,8 @@ import bestImage2 from "@/public/best-tattoo/best-tattoo-2.jpg";
 import bestImage3 from "@/public/best-tattoo/best-tattoo-3.webp";
 import LoadingScreen from "@/components/loading-screen";
 import Quete from "./quete";
+import Services from "./services";
+import Footer from "@/components/footer";
 
 const Start = () => {
   const { width, height, isLoading } = useWindowDimensions();
@@ -58,6 +60,25 @@ const Start = () => {
           image3Story={"wgwrgwgr"}
         />
         <Quete width={width} queteText={"citat ;aksjngiks  fkwebvush"} />
+        <Services
+          width={width}
+          language={language}
+          titleText={t("services")}
+          descriptionText={"descriereeeee"}
+          contactText={t("contact")}
+        />
+        <Footer
+          width={width}
+          motoText={t("moto")}
+          contactText={t("contact")}
+          mediaText={t("media")}
+          whatsappText={t("whatsapp")}
+          emailText={t("email")}
+          locationText={t("location")}
+          instagramText={t("instagram")}
+          facebookText={t("facebook")}
+          youtubeText={t("youtube")}
+        />
       </main>
     );
 };

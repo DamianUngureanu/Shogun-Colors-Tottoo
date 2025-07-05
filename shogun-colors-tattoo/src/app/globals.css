@@ -25,6 +25,13 @@ h2 {
   text-shadow: 3px 3px var(--shadow-color);
   font-weight: 100;
 }
+h3 {
+  font-size: var(--font-size-4);
+  color: var(--light-color);
+  font-family: "Gothic";
+  text-shadow: 3px 3px var(--shadow-color);
+  font-weight: 100;
+}
 p {
   font-size: var(--font-size-3);
   line-height: 1.75rem;
@@ -34,11 +41,11 @@ label {
 }
 body {
   min-height: 100vh;
+  max-width: 100vw;
   background-color: var(--background);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   z-index: -100;
   position: relative;
-  height: min-content;
   scroll-behavior: smooth;
 
   &::after {
@@ -61,7 +68,6 @@ body {
   --font-size-3: max(1vw, 10px);
   --font-size-2: calc(var(--font-size-3) / 1.618);
   --font-size-1: calc(var(--font-size-3) / 1.618) / 1.618;
-  --max-width: 500px;
   --light-color: #e4e7e7;
   --dark-color: #131211;
   --color-accent-simple: rgb(130, 149, 156);
