@@ -1,0 +1,8 @@
+.questionsContainer {
+  padding: max(10vw, 100px) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5vw;
+}

@@ -78,7 +78,7 @@ const NavbarMobile = ({
         <Link href="/">
           <button>{galleryText}</button>
         </Link>
-        <Link href="/">
+        <Link href="/questions">
           <button>{questionsText}</button>
         </Link>
         <Link href="/contact">

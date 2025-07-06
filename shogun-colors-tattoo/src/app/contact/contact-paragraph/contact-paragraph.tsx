@@ -45,14 +45,14 @@ const ContactParagraph = ({
         <ImageLink
           className={classes.contactLinksText}
           link={"https://wa.me/40749034599"}
-          icon={<FaWhatsapp size={"80px"} />}
+          icon={<FaWhatsapp size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{whatsappText}</span>
         </ImageLink>
         <ImageLink
           className={classes.contactLinksText}
           link={""}
-          icon={<IoMailOutline size={"80px"} />}
+          icon={<IoMailOutline size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{emailText}</span>
         </ImageLink>
@@ -61,7 +61,7 @@ const ContactParagraph = ({
           link={
             "https://www.google.com/maps/place/Shogun+Colours+Tattoo+Studio/@45.6591119,25.5984127,19.75z/data=!4m6!3m5!1s0x40b35dcb229699ef:0xe45dc4a5b9242bb8!8m2!3d45.6591419!4d25.5986102!16s%2Fg%2F11p105ngbp?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
           }
-          icon={<GrMapLocation size={"80px"} />}
+          icon={<GrMapLocation size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{locationText}</span>
         </ImageLink>
@@ -71,28 +71,28 @@ const ContactParagraph = ({
         <ImageLink
           className={classes.contactLinksText}
           link={"https://www.facebook.com/ShogunTattooBrasov/"}
-          icon={<FaFacebookF size={"80px"} />}
+          icon={<FaFacebookF size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{facebookText}</span>
         </ImageLink>
         <ImageLink
           className={classes.contactLinksText}
           link=""
-          icon={<FaTiktok size={"80px"} />}
+          icon={<FaTiktok size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{tiktokText}</span>
         </ImageLink>
         <ImageLink
           className={classes.contactLinksText}
           link={"https://www.instagram.com/shoguntattoobrasov/"}
-          icon={<FaInstagram size={"80px"} />}
+          icon={<FaInstagram size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{instagramText}</span>
         </ImageLink>
         <ImageLink
           className={classes.contactLinksText}
           link={"https://www.youtube.com/@shoguncolourstattoostudiog2911"}
-          icon={<FaYoutube size={"80px"} />}
+          icon={<FaYoutube size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{youtubeText}</span>
         </ImageLink>

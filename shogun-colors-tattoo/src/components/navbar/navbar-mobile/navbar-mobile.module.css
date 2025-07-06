@@ -25,7 +25,7 @@
       & button {
         background: none;
         border: none;
-        font-family: "Gothic";
+        font-family: var(--font-accent);
         font-size: var(--font-size-6);
         color: var(--light-color);
         text-shadow: 2.5px 2.5px var(--shadow-color);
