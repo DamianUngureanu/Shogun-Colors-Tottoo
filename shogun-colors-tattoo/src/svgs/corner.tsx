@@ -23,7 +23,7 @@ const Corner = ({ width, height, color, className, ...rest }: CornerProps) => {
       {...rest}
     >
       <defs>
-        <linearGradient id="myGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="25%" stopColor="rgb(130, 149, 156)" />
           <stop offset="50%" stopColor="rgb(219, 231, 245)" />
           <stop offset="75%" stopColor="rgb(130, 149, 156)" />

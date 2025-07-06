@@ -1,7 +1,7 @@
 .containerMobile {
-  width: 100%;
+  width: 100vw;
   min-height: 200vh;
-  overflow: visible !important;
+  overflow: visible;
   display: flex;
   flex-direction: column;
 

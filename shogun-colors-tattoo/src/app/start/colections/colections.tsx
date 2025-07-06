@@ -30,7 +30,7 @@ const Colections = ({
   return (
     <Container
       width={width}
-      corners={[true, true, true, true]}
+      corners={[false, false, true, true]}
       className={classes.container}
     >
       <div className={classes.content}>

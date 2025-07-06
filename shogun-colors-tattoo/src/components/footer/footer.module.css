@@ -5,9 +5,11 @@
   align-items: center;
   background: var(--background-secondary);
   padding: 20px 0;
+  overflow: hidden;
 
   & h1 {
     width: max-content;
+    text-wrap: wrap;
   }
 
   & section {

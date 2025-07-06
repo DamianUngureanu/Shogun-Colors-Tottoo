@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useMouseSlide } from "@/hooks/use-mouse-slide";
 import classes from "./navbar-mobile.module.css";
 import { Language } from "@/languages/language-type";
 import Link from "next/link";
@@ -31,8 +32,31 @@ const NavbarMobile = ({
   setLanguage,
 }: NavbarMobileProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const headerRef = useRef<HTMLElement | null>(null);
+
+  // Folosește hook-ul pentru swipe
+  const { ySlide } = useMouseSlide(headerRef.current);
+
+  useEffect(() => {
+    if (ySlide === 1) {
+      setIsOpen(true);
+    }
+  }, [ySlide]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, [isOpen]);
+
   return (
     <header
+      ref={headerRef}
       className={classNames(
         classes.container,
         !isOpen && classes.closeContainer
