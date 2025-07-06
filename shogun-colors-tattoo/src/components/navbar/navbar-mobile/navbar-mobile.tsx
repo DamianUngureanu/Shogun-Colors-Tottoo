@@ -81,7 +81,7 @@ const NavbarMobile = ({
         <Link href="/">
           <button>{questionsText}</button>
         </Link>
-        <Link href="/">
+        <Link href="/contact">
           <button>{contactText}</button>
         </Link>
         <LanguageSelect

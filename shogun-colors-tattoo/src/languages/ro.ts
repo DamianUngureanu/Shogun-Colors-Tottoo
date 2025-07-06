@@ -15,6 +15,7 @@ const ro = {
   instagram: "Instagram",
   facebook: "Facebook",
   youtube: "YouTube",
+  tiktok: "TikTok",
   collections: "Colectii",
   open: "Deschide",
 };

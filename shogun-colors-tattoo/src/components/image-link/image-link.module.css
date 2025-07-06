@@ -1,0 +1,10 @@
+.container {
+  width: max-content;
+  height: max-content;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

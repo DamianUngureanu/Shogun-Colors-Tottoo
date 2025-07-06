@@ -5,7 +5,8 @@ import logo from "@/public/logo.png";
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { GrMapLocation } from "react-icons/gr";
-import { FaYoutube, FaSquareInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
 
 interface FooterProps {
   width: number;
@@ -17,6 +18,7 @@ interface FooterProps {
   locationText: string;
   instagramText: string;
   facebookText: string;
+  tiktokText: string;
   youtubeText: string;
 }
 
@@ -30,6 +32,7 @@ const Footer = ({
   locationText,
   facebookText,
   youtubeText,
+  tiktokText,
   instagramText,
 }: FooterProps) => {
   return (
@@ -67,13 +70,23 @@ const Footer = ({
             {facebookText}
           </a>
           <a
+            href="https://www.facebook.com/ShogunTattooBrasov/"
+            target="_blank"
+          >
+            <FaTiktok />
+            {tiktokText}
+          </a>
+          <a
             href="https://www.instagram.com/shoguntattoobrasov/"
             target="_blank"
           >
             <FaInstagram />
             {instagramText}
           </a>
-          <a href="" target="_blank">
+          <a
+            href="https://www.youtube.com/@shoguncolourstattoostudiog2911"
+            target="_blank"
+          >
             <FaYoutube />
             {youtubeText}
           </a>

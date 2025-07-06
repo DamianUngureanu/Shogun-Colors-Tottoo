@@ -92,7 +92,7 @@ const NavbarDesktop = ({
             {questionsText}
           </button>
         </Link>
-        <Link href="/">
+        <Link href="/contact">
           <button
             style={
               width <= 1350

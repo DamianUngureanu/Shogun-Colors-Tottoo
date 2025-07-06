@@ -78,6 +78,7 @@ const Start = () => {
           instagramText={t("instagram")}
           facebookText={t("facebook")}
           youtubeText={t("youtube")}
+          tiktokText={t("tiktok")}
         />
       </main>
     );

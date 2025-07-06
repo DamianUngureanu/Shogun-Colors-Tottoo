@@ -15,6 +15,7 @@ const en = {
   instagram: "Instagram",
   facebook: "Facebook",
   youtube: "YouTube",
+  tiktok: "TikTok",
   collections: "Collections",
   open: "Open",
 };

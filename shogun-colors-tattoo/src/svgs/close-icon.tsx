@@ -43,12 +43,7 @@ const CloseIcon = ({
           </g>
         </mask>
       </defs>
-      <rect
-        width="100%"
-        height="100%"
-        fill="url(#myGradient)"
-        mask="url(#svgMaskClose)"
-      />
+      <rect width="100%" height="100%" mask="url(#svgMaskClose)" />
     </svg>
   );
 };
