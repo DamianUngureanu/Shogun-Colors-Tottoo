@@ -30,11 +30,11 @@ const Colections = ({
   return (
     <Container
       width={width}
-      corners={[false, false, true, true]}
+      corners={[true, true, true, true]}
       className={classes.container}
     >
       <div className={classes.content}>
-        <h1>Colections</h1>
+        <h1>{titleText}</h1>
         <span className={classes.contor}>
           {colectionMedia.map((element, index) => {
             if (cont * -1 == index) return <FaDotCircle key={index} />;
@@ -96,7 +96,7 @@ const Colections = ({
           />
         </div>
         <Link href={""}>
-          <Button className={classes.openButton}>Open</Button>
+          <Button className={classes.openButton}>{openText}</Button>
         </Link>
       </div>
     </Container>

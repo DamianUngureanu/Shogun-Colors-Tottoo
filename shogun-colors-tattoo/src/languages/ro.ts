@@ -15,6 +15,8 @@ const ro = {
   instagram: "Instagram",
   facebook: "Facebook",
   youtube: "YouTube",
+  collections: "Colectii",
+  open: "Deschide",
 };
 
 export default ro;

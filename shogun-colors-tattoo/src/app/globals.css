@@ -15,21 +15,24 @@ h1 {
   font-size: var(--font-size-6);
   color: var(--light-color);
   font-family: "Gothic";
-  text-shadow: 3px 3px var(--shadow-color);
+  text-shadow: 3px 3px var(--shadow-color), 0 0 15px var(--background-secondary),
+    0 0 15px var(--background-secondary), 0 0 15px var(--background-secondary);
   font-weight: 100;
 }
 h2 {
   font-size: var(--font-size-5);
   color: var(--light-color);
   font-family: "Gothic";
-  text-shadow: 3px 3px var(--shadow-color);
+  text-shadow: 3px 3px var(--shadow-color), 0 0 15px var(--background-secondary),
+    0 0 15px var(--background-secondary), 0 0 15px var(--background-secondary);
   font-weight: 100;
 }
 h3 {
   font-size: var(--font-size-4);
   color: var(--light-color);
   font-family: "Gothic";
-  text-shadow: 3px 3px var(--shadow-color);
+  text-shadow: 3px 3px var(--shadow-color), 0 0 15px var(--background-secondary),
+    0 0 15px var(--background-secondary), 0 0 15px var(--background-secondary);
   font-weight: 100;
 }
 p {
@@ -70,7 +73,7 @@ body {
   --font-size-1: calc(var(--font-size-3) / 1.618) / 1.618;
   --light-color: #e4e7e7;
   --dark-color: #131211;
-  --color-accent-simple: rgb(130, 149, 156);
+  --color-accent-simple: rgb(140, 182, 197);
   --color-accent-simple-second: rgb(219, 231, 245);
   --color-accent: linear-gradient(
     90deg,
@@ -83,18 +86,18 @@ body {
   --transparent-black: rgba(0, 0, 0, 0.5);
 
   --color-values: 19, 18, 17;
-  --color: var(--dark-color);
-  --background: rgb(223, 251, 255);
-  --background-secondary: rgb(1, 1, 26);
+  --color: var(--light-color);
+  --background: rgb(0, 11, 46);
+  --background-secondary: #000009;
   --background-tertiary: rgb(210, 209, 250);
   --background-transparent: color-mix(
-    oklab,
-    var(--transparent-white) 50%,
-    var(--background) 50%
+    in oklab,
+    var(--transparent-black) 20%,
+    var(--background) 80%
   );
   --background-secondary-transparent: color-mix(
     in oklab,
-    var(--transparent-white) 20%,
+    var(--transparent-black) 20%,
     var(--background-secondary) 80%
   );
   --background-hover: color-mix(
@@ -147,14 +150,14 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-accent); /* Culoarea thumb-ului scroll-barului */
+  background: var(--shadow-color); /* Culoarea thumb-ului scroll-barului */
   border-radius: 10px; /* Rounding for thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: color-mix(
     in oklab,
-    var(--color-accent) 70%,
+    var(--shadow-color) 70%,
     rgb(0, 0, 0) 30%
   ); /* Culoarea thumb-ului la hover */
 }

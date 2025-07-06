@@ -23,8 +23,6 @@
     z-index: 2;
     filter: drop-shadow(0.2vw 0.2vw var(--shadow-color))
       drop-shadow(0 0 7px var(--background-secondary))
-      drop-shadow(0 0 7px var(--background-secondary))
-      drop-shadow(0 0 7px var(--background-secondary))
       drop-shadow(0 0 7px var(--background-secondary));
   }
 }

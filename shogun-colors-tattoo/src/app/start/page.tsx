@@ -43,8 +43,8 @@ const Start = () => {
         />
         <PageStarter width={width} />
         <Colections
-          titleText={"buna"}
-          openText={""}
+          titleText={t("collections")}
+          openText={t("open")}
           width={width}
           colectionMedia={ColectionData}
           language={language}

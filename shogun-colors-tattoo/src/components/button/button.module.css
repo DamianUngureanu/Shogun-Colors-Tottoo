@@ -6,6 +6,7 @@
   color: var(--light-color);
   background: transparent;
   font-family: "Gothic";
+  text-decoration: underline;
   text-shadow: 2px 2px var(--shadow-color), 0 0 15px var(--background-secondary),
     0 0 15px var(--background-secondary), 0 0 15px var(--background-secondary),
     0 0 15px var(--background-secondary);

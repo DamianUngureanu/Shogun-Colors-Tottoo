@@ -15,6 +15,8 @@ const en = {
   instagram: "Instagram",
   facebook: "Facebook",
   youtube: "YouTube",
+  collections: "Collections",
+  open: "Open",
 };
 
 export default en;
