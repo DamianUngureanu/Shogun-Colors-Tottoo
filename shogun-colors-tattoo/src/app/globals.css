@@ -153,6 +153,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--shadow-color); /* Culoarea thumb-ului scroll-barului */
   border-radius: 10px; /* Rounding for thumb */
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar-thumb:hover {

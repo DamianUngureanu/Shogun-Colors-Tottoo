@@ -70,7 +70,7 @@ const NavbarDesktop = ({
             {aboutText}
           </button>
         </Link>
-        <Link href="/">
+        <Link href="/gallery">
           <button
             style={
               width <= 1350

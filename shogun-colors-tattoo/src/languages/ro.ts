@@ -18,6 +18,9 @@ const ro = {
   tiktok: "TikTok",
   collections: "Colectii",
   open: "Deschide",
+  bestTattoos: "Tatuaje Top",
+  tattooColection: "Colectie Tatuaje",
+  other: "Altele",
 };
 
 export default ro;

@@ -33,8 +33,6 @@ const NavbarMobile = ({
 }: NavbarMobileProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const headerRef = useRef<HTMLElement | null>(null);
-
-  // Folosește hook-ul pentru swipe
   const { ySlide } = useMouseSlide(headerRef.current);
 
   useEffect(() => {
@@ -75,7 +73,7 @@ const NavbarMobile = ({
         <Link href="/">
           <button>{aboutText}</button>
         </Link>
-        <Link href="/">
+        <Link href="/gallery">
           <button>{galleryText}</button>
         </Link>
         <Link href="/questions">

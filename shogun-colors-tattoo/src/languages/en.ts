@@ -1,3 +1,5 @@
+import bestTattoo from "@/data/best-tattoo";
+
 const en = {
   home: "Home",
   about: "About",
@@ -18,6 +20,9 @@ const en = {
   tiktok: "TikTok",
   collections: "Collections",
   open: "Open",
+  bestTattoos: "Best Tattoos",
+  tattooColection: "Tattoo Collection",
+  other: "Other",
 };
 
 export default en;
