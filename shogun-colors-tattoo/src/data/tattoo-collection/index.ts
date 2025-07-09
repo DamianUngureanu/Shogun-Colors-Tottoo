@@ -1,3 +1,11 @@
+import { StaticImageData } from "next/image";
+
+type CollectionEntryType = {
+  collectionName: string;
+  visible: number;
+  images: StaticImageData[];
+};
+
 import img0 from "@/public/tattoo-collection/gothic---tattoo1.jpg";
 import img1 from "@/public/tattoo-collection/gothic---tattoo2.jpg";
 import img2 from "@/public/tattoo-collection/gothic---tattoo3.jpg";
@@ -16,6 +24,22 @@ import img14 from "@/public/tattoo-collection/realist---tattoo4.jpeg";
 import img15 from "@/public/tattoo-collection/realist---tattoo5.jpg";
 
 
-import { StaticImageData } from "next/image";
-const bestTattoo = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15] as StaticImageData[];
-export default bestTattoo;
+const collections = [
+  {
+    collectionName: "gothic",
+    visible: 3,
+    images: [img0, img1, img2],
+  },
+  {
+    collectionName: "minimal",
+    visible: 3,
+    images: [img3, img4, img5, img6, img7, img8, img9, img10],
+  },
+  {
+    collectionName: "realist",
+    visible: 3,
+    images: [img11, img12, img13, img14, img15],
+  },
+] as CollectionEntryType[];
+
+export default collections;

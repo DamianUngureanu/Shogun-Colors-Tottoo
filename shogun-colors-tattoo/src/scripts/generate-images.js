@@ -2,7 +2,7 @@ import { readdirSync, mkdirSync, writeFileSync, existsSync } from "fs";
 import { join, extname, resolve } from "path";
 
 const validExt = [".jpg", ".jpeg", ".png", ".webp", ".avif"];
-export function usePublicImages(folderName: string) {
+function usePublicImages(folderName) {
   const inputDir = resolve(`src/public/${folderName}`);
   const outputDir = resolve(`src/data/${folderName}`);
   const outputFile = join(outputDir, "index.ts");
@@ -44,10 +44,10 @@ export default bestTattoo;
   console.log(`✅ Fișier generat: ${outputFile}`);
 }
 
-export function groupImagesByCollectionFile(folderName: string) {
+function groupImagesByCollectionFile(folderName) {
   const inputDir = resolve(`src/public/${folderName}`);
   const outputDir = resolve(`src/data/${folderName}`);
-  const outputFile = join(outputDir, "grouped.ts");
+  const outputFile = join(outputDir, "index.ts");
 
   if (!existsSync(inputDir)) {
     throw new Error(`❌ Folderul nu există: ${inputDir}`);
@@ -68,7 +68,7 @@ export function groupImagesByCollectionFile(folderName: string) {
   }
 
   // Grupăm imaginile după prefix (ex: flowers---rose.jpg => grup: flowers)
-  const groups: Record<string, string[]> = {};
+  const groups = {};
   for (const file of files) {
     const [prefix] = file.split("---");
     if (!prefix) continue;
@@ -82,7 +82,7 @@ export function groupImagesByCollectionFile(folderName: string) {
   let objectContent = "const collections = [\n";
 
   for (const [collectionName, fileList] of Object.entries(groups)) {
-    const imageVars: string[] = [];
+    const imageVars = [];
 
     for (const file of fileList) {
       const varName = `img${imageIndex++}`;
@@ -114,3 +114,6 @@ ${objectContent}
   writeFileSync(outputFile, fullContent.trim());
   console.log(`✅ Grupare generată: ${outputFile}`);
 }
+usePublicImages("best-tattoo");
+groupImagesByCollectionFile("tattoo-collection");
+usePublicImages("other-tattoo");

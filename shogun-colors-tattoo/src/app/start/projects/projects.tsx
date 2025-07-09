@@ -4,6 +4,9 @@ import Container from "@/components/container";
 import { StaticImageData } from "next/image";
 import Button from "@/components/button";
 import classNames from "classnames";
+import Modal from "@/components/modal";
+
+import bestTattoo from "@/data/best-tattoo";
 
 interface ProjectsProps {
   moreText: string;
@@ -26,10 +29,11 @@ const Projects = ({
   bestImage2,
   bestImage3,
 }: ProjectsProps) => {
-  const [isMobile, setIsMobile] = useState(width <= 768);
+  const [isMobile, setIsMobile] = useState<boolean>(width <= 768);
   useEffect(() => {
     setIsMobile(width <= 768);
   }, [width]);
+  const [isOpenModal, setIsOpenModal] = useState<number | undefined>(undefined);
   return (
     <Container
       width={width}
@@ -41,7 +45,21 @@ const Projects = ({
       isBackdrop={false}
     >
       <h1 className={classes.title}>Best Tattoos</h1>
-      <section style={{ zIndex: 1 }}>
+      {bestTattoo.map((element, index) => {
+        return (
+          <section style={{ zIndex: index + 1 }} key={"best tattoo" + index}>
+            <img src={element.src} alt="best tattoo 1" />
+            {!isMobile && <p>{image1Story}</p>}
+            {isMobile && (
+              <Button onClick={() => setIsOpenModal(index)}>{moreText}</Button>
+            )}
+          </section>
+        );
+      })}
+      {isOpenModal !== undefined && (
+        <Modal onClose={() => setIsOpenModal(undefined)}>buna</Modal>
+      )}
+      {/* <section style={{ zIndex: 1 }}>
         <img src={bestImage1.src} alt="best tattoo 1" />
         {!isMobile && <p>{image1Story}</p>}
         {isMobile && <Button>{moreText}</Button>}
@@ -50,7 +68,7 @@ const Projects = ({
         <img src={bestImage2.src} alt="best tattoo 2" />
         {!isMobile && <p>{image2Story}</p>}
         {isMobile && <Button>{moreText}</Button>}
-      </section>
+      </section> */}
     </Container>
   );
 };

@@ -2,7 +2,10 @@
   "name": "shogun-colors-tattoo",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
+    "predev": "ts-node src/scripts/generate-images",
+    "prebuild": "ts-node src/scripts/generate-images",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -20,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./colections.module.css";
 import ColectionType from "@/types/colection-type";
 import Container from "@/components/container";
@@ -10,6 +10,8 @@ import Arrow from "@/svgs/arrow";
 
 import { FaDotCircle } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
+import CollectionEntryType from "@/types/colection-entry-type";
+import tattooCollection from "@/data/tattoo-collection";
 
 interface ColectionsProps {
   titleText: string;
@@ -27,6 +29,9 @@ const Colections = ({
   language,
 }: ColectionsProps) => {
   const [cont, setCont] = useState<number>(0);
+  const [processingTattooCollection, setProcessingTattooCollection] =
+    useState<CollectionEntryType[]>(tattooCollection);
+
   return (
     <Container
       width={width}
@@ -46,18 +51,24 @@ const Colections = ({
         </span>
         <div className={classes.sliderContainer}>
           <div className={classes.slider}>
-            {colectionMedia.map((element, index) => {
+            {processingTattooCollection.map((element, index) => {
               return (
                 <div
                   className={classes.sliderItem}
                   key={index}
                   style={{ "--itemIndex": cont + index } as React.CSSProperties}
                 >
-                  <h2>
-                    {language == "ro" ? element.titleRo : element.titleEn}
-                  </h2>
+                  <h2>{element.collectionName}</h2>
                   <div className={classes.mediaPhotos}>
-                    <section>
+                    {element.images.map((e, i) => {
+                      if (i < 3)
+                        return (
+                          <section key={"colection images" + i}>
+                            <img src={e.src} alt={"colection image" + i} />
+                          </section>
+                        );
+                    })}
+                    {/* <section>
                       <img
                         src={element.mediaPaths.image1Path}
                         alt="first colection image"
@@ -74,7 +85,7 @@ const Colections = ({
                         src={element.mediaPaths.image3Path}
                         alt="third colection image"
                       />
-                    </section>
+                    </section> */}
                   </div>
                 </div>
               );
@@ -95,7 +106,7 @@ const Colections = ({
             onClick={() => (cont < 0 ? setCont(cont + 1) : {})}
           />
         </div>
-        <Link href={""}>
+        <Link href={"/gallery"}>
           <Button className={classes.openButton}>{openText}</Button>
         </Link>
       </div>
