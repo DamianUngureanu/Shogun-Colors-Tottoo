@@ -40,19 +40,11 @@
   background: var(--color-accent) !important;
   border-radius: 10px;
 }
-/* 
-.bestTattooContainer::-webkit-scrollbar-thumb:hover {
-  background: color-mix(
-    in oklab,
-    var(--color-accent) 70%,
-    rgb(0, 0, 0) 30%
-  ) !important;
-} */
 
 .imageContainer {
   flex: 0 0 auto;
   height: 100%;
-  width: 700px;
+  width: min(700px, 90vw);
   scroll-snap-align: center;
   border-radius: 4px;
   overflow: hidden;

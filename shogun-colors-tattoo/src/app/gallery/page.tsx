@@ -10,6 +10,8 @@ import { useLanguage } from "@/languages";
 import { Language } from "@/languages/language-type";
 import BestTattoo from "./best-tattoo";
 import bestTattoo from "@/data/best-tattoo";
+import TattooCollection from "./tattoo-colection";
+import OtherTattoo from "./other-tattoo";
 
 const Gallery = () => {
   const { scrollPosition, isScrollingUp } = useWindowScroll();
@@ -36,6 +38,11 @@ const Gallery = () => {
         width={width}
         bestTattooText={t("bestTattoos")}
       />
+      <TattooCollection
+        width={width}
+        tattooColectionText={"Tattoo Colections"}
+      />
+      <OtherTattoo width={width} otherTattooText={t("otherTattoos")} />
       <Footer
         width={width}
         motoText={t("moto")}

@@ -1,0 +1,45 @@
+.container {
+  padding: 15vw 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & h1 {
+    position: relative;
+    z-index: 1;
+  }
+}
+.collectionContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.collectionContainer {
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.imagesContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & img {
+    width: max(20vw, 125px);
+    aspect-ratio: 1/1;
+  }
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.imageHidden {
+  display: none;
+}
+/* .imagesContainer:has(img.imageHidden) {
+  height: 0% !important ;
+  overflow: hidden;
+} */

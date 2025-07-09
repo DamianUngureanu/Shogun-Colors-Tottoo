@@ -18,6 +18,7 @@ h1 {
   text-shadow: 3px 3px var(--shadow-color), 0 0 15px var(--background-secondary),
     0 0 15px var(--background-secondary), 0 0 15px var(--background-secondary);
   font-weight: 100;
+  text-align: center;
 }
 h2 {
   font-size: var(--font-size-5);
@@ -26,6 +27,7 @@ h2 {
   text-shadow: 3px 3px var(--shadow-color), 0 0 15px var(--background-secondary),
     0 0 15px var(--background-secondary), 0 0 15px var(--background-secondary);
   font-weight: 100;
+  text-align: center;
 }
 h3 {
   font-size: var(--font-size-4);
@@ -34,6 +36,7 @@ h3 {
   text-shadow: 3px 3px var(--shadow-color), 0 0 15px var(--background-secondary),
     0 0 15px var(--background-secondary), 0 0 15px var(--background-secondary);
   font-weight: 100;
+  text-align: center;
 }
 p {
   font-size: var(--font-size-3);

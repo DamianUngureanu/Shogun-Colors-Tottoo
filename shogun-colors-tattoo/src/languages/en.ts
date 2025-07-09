@@ -22,7 +22,7 @@ const en = {
   open: "Open",
   bestTattoos: "Best Tattoos",
   tattooColection: "Tattoo Collection",
-  other: "Other",
+  otherTattoos: "Other Tattoos",
 };
 
 export default en;

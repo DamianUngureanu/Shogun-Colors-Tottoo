@@ -20,7 +20,7 @@ const ro = {
   open: "Deschide",
   bestTattoos: "Tatuaje Top",
   tattooColection: "Colectie Tatuaje",
-  other: "Altele",
+  otherTattoos: "Altele Tatuaje",
 };
 
 export default ro;

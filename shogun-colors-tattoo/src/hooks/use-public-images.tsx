@@ -41,6 +41,7 @@ export function usePublicImages(folderName: string) {
     .join("\n");
 
   const exportBlock = `
+import { StaticImageData } from "next/image";
 const bestTattoo = [${files
     .map((_, i) => `img${i}`)
     .join(", ")}] as StaticImageData[];
