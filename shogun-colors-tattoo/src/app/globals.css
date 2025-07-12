@@ -64,11 +64,11 @@ body {
   }
 }
 @font-face {
-  font-family: "Gothic";
-  src: url("../fonts/CloisterBlack.ttf");
+  font-family: "Kaushan";
+  src: url("../fonts/KaushanScript-Regular.ttf");
 }
 :root {
-  --font-accent: "Gothic", sans-serif;
+  --font-accent: "Kaushan", sans-serif;
   --font-size-6: calc(var(--font-size-3) * 1.618 * 1.618 * 1.618 * 1.618);
   --font-size-5: calc(var(--font-size-3) * 1.618 * 1.618 * 1.309);
   --font-size-4: calc(var(--font-size-3) * 1.618);

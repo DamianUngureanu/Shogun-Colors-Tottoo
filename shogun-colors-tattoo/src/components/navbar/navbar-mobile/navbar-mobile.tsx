@@ -70,7 +70,7 @@ const NavbarMobile = ({
         <Link href="/">
           <button>{homeText}</button>
         </Link>
-        <Link href="/">
+        <Link href="/about">
           <button>{aboutText}</button>
         </Link>
         <Link href="/gallery">

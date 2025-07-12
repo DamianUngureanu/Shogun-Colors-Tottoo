@@ -16,11 +16,11 @@ const Quete = ({ width, queteText }: QueteProps) => {
       corners={[true, true, true, true]}
     >
       <div className={classes.svgContainer}>
-        <QueteDesign width={(width * 9) / 10} color={"#fff"} />
+        <QueteDesign width={(width * 7) / 10} color={"#fff"} />
         <br />
         <h1>Lorem ipsum dolor sit amet consectetur</h1>
         <br />
-        <QueteDesign width={(width * 9) / 10} color={"#fff"} />
+        <QueteDesign width={(width * 7) / 10} color={"#fff"} />
       </div>
     </Container>
   );
