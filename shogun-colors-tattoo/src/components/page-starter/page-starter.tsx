@@ -15,6 +15,7 @@ const PageStarter = ({ background, width }: PageStarterProps) => {
       width={width}
       background={background}
       corners={[false, false, true, true]}
+      isBackdrop={true}
     >
       <LogoSection />
     </Container>

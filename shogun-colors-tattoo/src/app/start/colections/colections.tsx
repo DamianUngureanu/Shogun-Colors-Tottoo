@@ -66,24 +66,6 @@ const Colections = ({
                           </section>
                         );
                     })}
-                    {/* <section>
-                      <img
-                        src={element.mediaPaths.image1Path}
-                        alt="first colection image"
-                      />
-                    </section>
-                    <section>
-                      <img
-                        src={element.mediaPaths.image2Path}
-                        alt="second colection image"
-                      />
-                    </section>
-                    <section>
-                      <img
-                        src={element.mediaPaths.image3Path}
-                        alt="third colection image"
-                      />
-                    </section> */}
                   </div>
                 </div>
               );

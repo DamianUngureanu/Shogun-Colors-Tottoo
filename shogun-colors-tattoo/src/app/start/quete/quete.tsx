@@ -10,19 +10,13 @@ interface QueteProps {
 
 const Quete = ({ width, queteText }: QueteProps) => {
   return (
-    <Container
-      className={classes.container}
-      width={width}
-      corners={[true, true, true, true]}
-    >
-      <div className={classes.svgContainer}>
-        <QueteDesign width={(width * 7) / 10} color={"#fff"} />
-        <br />
-        <h1>{queteText}</h1>
-        <br />
-        <QueteDesign width={(width * 7) / 10} color={"#fff"} />
-      </div>
-    </Container>
+    <div className={classes.svgContainer}>
+      <QueteDesign width={(width * 7) / 10} color={"#fff"} />
+      <br />
+      <h1>{queteText}</h1>
+      <br />
+      <QueteDesign width={(width * 7) / 10} color={"#fff"} />
+    </div>
   );
 };
 

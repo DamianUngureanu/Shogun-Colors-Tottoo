@@ -40,13 +40,13 @@ const NavbarDesktop = ({
         scrollPosition > 200 && !isScrollingUp && classes.navHidden
       )}
     >
-      <section>
+      {/* <section>
         <NavbarGraphicDesign
           width={950}
           height={height}
           className={classes.eyebrow1}
         />
-      </section>
+      </section> */}
       <nav>
         <Link href="/">
           <button

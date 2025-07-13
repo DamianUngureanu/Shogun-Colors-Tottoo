@@ -17,16 +17,20 @@ const Container = ({
   width,
   background,
   corners,
-  isBackdrop = true,
+  isBackdrop = false,
   className,
   children,
 }: ContainerProps) => {
   return (
     <div
       style={background && { backgroundImage: `url(${background.src})` }}
-      className={classNames(classes.container, className && className)}
+      className={classNames(
+        classes.container,
+        className && className,
+        isBackdrop && classes.backdrop
+      )}
     >
-      {corners[0] && (
+      {/* {corners[0] && (
         <Corner
           width={width <= 1000 ? 125 : width / 8}
           color={"#fff"}
@@ -53,7 +57,7 @@ const Container = ({
           color={"#fff"}
           className={classes.cornerBottomRight}
         />
-      )}
+      )} */}
       {children}
     </div>
   );

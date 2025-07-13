@@ -15,11 +15,12 @@
   }
 
   & nav {
-    width: 950px;
-    padding-bottom: 90px;
+    width: 100%;
+    /* padding-bottom: 90px; */
     top: 0;
     display: flex;
     justify-content: center;
+    column-gap: 20px;
     position: relative;
 
     &::after {
@@ -29,15 +30,13 @@
       background: var(--background-secondary-transparent);
       backdrop-filter: blur(7px);
       -webkit-backdrop-filter: blur(7px);
-      border-bottom-left-radius: 60px;
-      border-bottom-right-radius: 60px;
       box-shadow: 0 0 2px 3px var(--background-secondary-transparent);
       overflow: visible;
       z-index: -1;
     }
 
     & a {
-      flex: 1;
+      /* flex: 1; */
 
       & button {
         width: 100%;

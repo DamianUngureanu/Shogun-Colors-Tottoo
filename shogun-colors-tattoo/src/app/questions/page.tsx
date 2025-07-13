@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import classes from "./questions.module.css";
-import QuestionData from "@/data/question-data";
+import { QuestionPageData } from "@/data/question-page-data";
 import useWindowScroll from "@/hooks/use-window-scroll";
 import { useWindowDimensions } from "@/hooks/use-window-dimension";
 import { useLanguage } from "@/languages";
@@ -31,13 +31,16 @@ const Questions = () => {
         language={language}
         setLanguage={(lang: Language) => setLanguage(lang)}
       ></Navbar>
-      <PageStarter width={width}></PageStarter>
+      <PageStarter
+        width={width}
+        background={QuestionPageData.startingImage}
+      ></PageStarter>
       <Container
         width={width}
         corners={[true, true, true, true]}
         className={classes.questionsContainer}
       >
-        {QuestionData.map((question, index) => {
+        {QuestionPageData.questions.map((question, index) => {
           return (
             <Question
               language={language}

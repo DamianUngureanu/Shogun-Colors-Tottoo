@@ -1,5 +1,4 @@
 type QuestionType = {
-  id: number;
   titleRo: string;
   titleEn: string;
   descriptionRo: string;

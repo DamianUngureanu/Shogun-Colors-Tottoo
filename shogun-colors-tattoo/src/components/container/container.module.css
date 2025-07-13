@@ -6,13 +6,19 @@
   background-size: cover;
   overflow: hidden;
   position: relative;
-
+}
+.backdrop {
   &::after {
     content: "";
     position: absolute;
     inset: 0 0 0 0;
-    background: var(--background-transparent);
-    box-shadow: inset 0 0px 50px 30px var(--background-secondary);
+    background: linear-gradient(
+      180deg,
+      var(--background-transparent) 0%,
+      var(--background-transparent) 60%,
+      var(--background) 100%
+    );
+    /* box-shadow: inset 0 0px 50px 30px var(--background-secondary); */
     z-index: 0;
   }
 }

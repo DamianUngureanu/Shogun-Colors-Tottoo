@@ -51,7 +51,7 @@ const Services = ({
           );
         })}
       </div>
-      <Link href={""}>
+      <Link href={"/contact"}>
         <Button>{contactText}</Button>
       </Link>
     </Container>
