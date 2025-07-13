@@ -3,7 +3,6 @@ import classes from "./colections.module.css";
 import ColectionType from "@/types/colection-type";
 import Container from "@/components/container";
 
-import background from "@/public/test/colection-background.jpg";
 import Button from "@/components/button";
 import Link from "next/link";
 import Arrow from "@/svgs/arrow";
@@ -11,13 +10,12 @@ import Arrow from "@/svgs/arrow";
 import { FaDotCircle } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
 import CollectionEntryType from "@/types/colection-entry-type";
-import tattooCollection from "@/data/tattoo-collection";
 
 interface ColectionsProps {
   titleText: string;
   openText: string;
   width: number;
-  colectionMedia: ColectionType[];
+  colectionMedia: CollectionEntryType[];
   language: "ro" | "en";
 }
 
@@ -30,7 +28,7 @@ const Colections = ({
 }: ColectionsProps) => {
   const [cont, setCont] = useState<number>(0);
   const [processingTattooCollection, setProcessingTattooCollection] =
-    useState<CollectionEntryType[]>(tattooCollection);
+    useState<CollectionEntryType[]>(colectionMedia);
 
   return (
     <Container

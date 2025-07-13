@@ -1,5 +1,5 @@
 .container {
-  max-width: 200px;
+  min-width: 200px;
   border: none;
   cursor: pointer;
   font-size: var(--font-size-5);

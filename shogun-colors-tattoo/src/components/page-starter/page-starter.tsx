@@ -1,14 +1,15 @@
 import React from "react";
 import classes from "./page-starter.module.css";
-import background from "@/public/backgound.jpg";
 import Container from "../container";
 import LogoSection from "./logo-section";
+import { StaticImageData } from "next/image";
 
 interface PageStarterProps {
+  background?: StaticImageData;
   width: number;
 }
 
-const PageStarter = ({ width }: PageStarterProps) => {
+const PageStarter = ({ background, width }: PageStarterProps) => {
   return (
     <Container
       width={width}

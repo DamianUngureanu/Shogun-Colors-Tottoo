@@ -21,7 +21,6 @@ const Container = ({
   className,
   children,
 }: ContainerProps) => {
-  console.log("Container width:", width);
   return (
     <div
       style={background && { backgroundImage: `url(${background.src})` }}

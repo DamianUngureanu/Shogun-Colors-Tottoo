@@ -70,7 +70,7 @@ const Footer = ({
             {facebookText}
           </a>
           <a
-            href="https://www.facebook.com/ShogunTattooBrasov/"
+            href="https://www.tiktok.com/@shoguntattoobv?lang=ro-RO"
             target="_blank"
           >
             <FaTiktok />

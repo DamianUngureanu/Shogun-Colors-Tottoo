@@ -8,7 +8,6 @@ import usePageLoaded from "@/hooks/use-page-loaded";
 import { useLanguage } from "@/languages";
 import useWindowScroll from "@/hooks/use-window-scroll";
 import Colections from "./colections";
-import ColectionData from "@/data/colection-data";
 import Projects from "./projects";
 
 import bestImage1 from "@/public/best-tattoo/best-tattoo-1.webp";
@@ -18,6 +17,9 @@ import LoadingScreen from "@/components/loading-screen";
 import Quete from "./quete";
 import Services from "./services";
 import Footer from "@/components/footer";
+
+import { HomePageData } from "@/data/home-page-data";
+import ColectionData from "@/data/tattoo-collection";
 
 const Start = () => {
   const { width, height, isLoading } = useWindowDimensions();
@@ -41,7 +43,7 @@ const Start = () => {
           scrollPosition={scrollPosition}
           isScrollingUp={isScrollingUp}
         />
-        <PageStarter width={width} />
+        <PageStarter width={width} background={HomePageData.startImage} />
         <Colections
           titleText={t("collections")}
           openText={t("open")}
@@ -59,13 +61,14 @@ const Start = () => {
           image2Story={"wrvwrgw"}
           image3Story={"wgwrgwgr"}
         />
-        <Quete width={width} queteText={"citat ;aksjngiks  fkwebvush"} />
+        <Quete width={width} queteText={HomePageData.quote} />
         <Services
           width={width}
           language={language}
           titleText={t("services")}
           descriptionText={"descriereeeee"}
           contactText={t("contact")}
+          servicesData={HomePageData.services}
         />
         <Footer
           width={width}

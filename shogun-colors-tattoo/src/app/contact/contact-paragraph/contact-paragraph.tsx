@@ -77,7 +77,7 @@ const ContactParagraph = ({
         </ImageLink>
         <ImageLink
           className={classes.contactLinksText}
-          link=""
+          link={"https://www.tiktok.com/@shoguntattoobv?lang=ro-RO"}
           icon={<FaTiktok size={width <= 768 ? width / 10 : "100px"} />}
         >
           <span>{tiktokText}</span>
