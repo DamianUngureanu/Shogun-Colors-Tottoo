@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignoră folderul admin
+admin/
+
+# Ignoră fișierul admin-scripts.js
+admin-scripts.js
