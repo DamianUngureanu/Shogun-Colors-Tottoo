@@ -3,14 +3,21 @@ import HomePageType from "@/types/home-page-type";
 
 export const HomePageData: HomePageType = {
   startImage: startImage,
-  quote: "citat nou",
+  quote: "citat de la salon",
   services: [
   {
-    "nameRO": "nouu",
-    "nameEN": "nouu",
-    "price": 12345,
-    "descriptionRO": "nouu",
-    "descriptionEN": "nouu"
+    "nameRO": "tatuaj mic",
+    "nameEN": "tatuaj mic",
+    "price": 2998,
+    "descriptionRO": "tatuaj mic",
+    "descriptionEN": "tatuaj mic"
+  },
+  {
+    "nameRO": "tatuaj mare",
+    "nameEN": "tatuaj mare",
+    "price": 5000,
+    "descriptionRO": "tatuaj mare",
+    "descriptionEN": "tatuaj mare"
   }
 ]
 };
