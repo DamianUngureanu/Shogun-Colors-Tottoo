@@ -11,10 +11,10 @@ export const QuestionPageData: QuestionPageType = {
     "descriptionEn": "Caring for tattoos is essential to ensure proper healing and maintain their appearance. It is important to follow the tattoo artist's instructions, which may include regular cleaning, applying ointments, and avoiding sun exposure."
   },
   {
-    "titleRo": "",
-    "titleEn": "",
-    "descriptionRo": "",
-    "descriptionEn": ""
+    "titleRo": "wefwef",
+    "titleEn": "wefwe",
+    "descriptionRo": "wefw",
+    "descriptionEn": "wef"
   }
 ]
 };
