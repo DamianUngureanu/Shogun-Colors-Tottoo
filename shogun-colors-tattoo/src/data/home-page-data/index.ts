@@ -3,7 +3,7 @@ import HomePageType from "@/types/home-page-type";
 
 export const HomePageData: HomePageType = {
   startImage: startImage,
-  quote: "citat de la salon",
+  quote: "citat de la salons",
   services: [
   {
     "nameRO": "tatuaj mic",
