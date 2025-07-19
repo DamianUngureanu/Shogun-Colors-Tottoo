@@ -19,11 +19,11 @@
     align-items: center;
   }
 }
-[data-orientation="default"] .container {
-  flex-direction: row;
+.container[data-orientation="default"] {
+  flex-direction: row !important;
 }
-[data-orientation="reverse"] .container {
-  flex-direction: row-reverse;
+.container[data-orientation="reverse"] {
+  flex-direction: row-reverse !important;
 }
 .imageContainer {
   height: 100%;

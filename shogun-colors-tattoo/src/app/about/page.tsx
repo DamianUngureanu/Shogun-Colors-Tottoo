@@ -8,9 +8,9 @@ import useWindowScroll from "@/hooks/use-window-scroll";
 import { Language } from "@/languages/language-type";
 import React from "react";
 import { useLanguage } from "@/languages";
-import image from "@/public/artis-picture.jpg";
 import AboutSection from "./about-section";
 import Container from "@/components/container";
+import AboutPageData from "@/data/about-page-data";
 
 const About = () => {
   const { scrollPosition, isScrollingUp } = useWindowScroll();
@@ -31,17 +31,32 @@ const About = () => {
         language={language}
         setLanguage={(lang: Language) => setLanguage(lang)}
       ></Navbar>
-      <PageStarter width={width}></PageStarter>
+      <PageStarter
+        width={width}
+        background={AboutPageData.backgroundImage}
+      ></PageStarter>
       <Container
         width={width}
         corners={[true, true, true, true]}
         className={classes.aboutContainer}
       >
-        <AboutSection
-          image={image}
-          title={"artist"}
-          description={"ceva fain"}
-        />
+        {AboutPageData.about.map((element, index) => {
+          return (
+            <AboutSection
+              key={"about section" + index}
+              image={
+                element.image && !(element.image instanceof File)
+                  ? element.image
+                  : undefined
+              }
+              title={language == "ro" ? element.titleRO : element.titleEN}
+              description={
+                language == "ro" ? element.descriptionRO : element.descriptionEN
+              }
+              orientation={element.revers}
+            />
+          );
+        })}
       </Container>
 
       <Footer
