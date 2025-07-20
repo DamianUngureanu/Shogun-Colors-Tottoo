@@ -48,7 +48,8 @@ label {
 body {
   min-height: 100vh;
   max-width: 100vw;
-  background-color: var(--background);
+  /* background-color: var(--background); */
+  background-image: url("../public/shogun-background.png");
   overflow-x: hidden !important;
   z-index: -100;
   position: relative;

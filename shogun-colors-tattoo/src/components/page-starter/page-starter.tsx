@@ -16,8 +16,10 @@ const PageStarter = ({ background, width }: PageStarterProps) => {
       background={background}
       corners={[false, false, true, true]}
       isBackdrop={true}
+      className={classes.container}
     >
       <LogoSection />
+      <div className={classes.transferLine}></div>
     </Container>
   );
 };
