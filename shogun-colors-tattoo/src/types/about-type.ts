@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 type AboutType = {
-  image: StaticImageData | undefined | File;
+  image: StaticImageData | undefined;
   titleRO: string;
   titleEN: string;
   descriptionRO: string;

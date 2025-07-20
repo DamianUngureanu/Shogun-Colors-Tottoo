@@ -6,18 +6,11 @@ export const HomePageData: HomePageType = {
   quote: "citat de la salonss",
   services: [
   {
-    "nameRO": "tatuaj mic",
-    "nameEN": "tatuaj mic",
+    "nameRO": "tatuaj micaaaaaaa",
+    "nameEN": "tatuaj micaaaaaa",
     "price": 2998,
     "descriptionRO": "tatuaj mic",
     "descriptionEN": "tatuaj mic"
-  },
-  {
-    "nameRO": "tatuaj mare",
-    "nameEN": "tatuaj mare",
-    "price": 5000,
-    "descriptionRO": "tatuaj mare",
-    "descriptionEN": "tatuaj mare"
   }
 ]
 };
