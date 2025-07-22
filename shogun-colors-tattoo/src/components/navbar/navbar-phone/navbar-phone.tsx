@@ -41,9 +41,9 @@ const NavbarPhone = ({
             <h2>{homeText}</h2>
           </button>
         </Link>
-        <Link href={"/questions"}>
+        <Link href={"/about"}>
           <button>
-            <h2>{questionsText}</h2>
+            <h2>{aboutText}</h2>
           </button>
         </Link>
         <Link href={"/gallery"}>
@@ -51,9 +51,9 @@ const NavbarPhone = ({
             <h2>{galleryText}</h2>
           </button>
         </Link>
-        <Link href={"/about"}>
+        <Link href={"/questions"}>
           <button>
-            <h2>{aboutText}</h2>
+            <h2>{questionsText}</h2>
           </button>
         </Link>
         <Link href={"/contact"}>

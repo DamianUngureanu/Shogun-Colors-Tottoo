@@ -61,7 +61,11 @@ const Start = () => {
           image2Story={"wrvwrgw"}
           image3Story={"wgwrgwgr"}
         />
+        <br />
+        <br />
         <Quete width={width} queteText={HomePageData.quote} />
+        <br />
+        <br />
         <Services
           width={width}
           language={language}

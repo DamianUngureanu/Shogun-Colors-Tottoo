@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  & span,
+  & p,
   h2 {
     display: flex;
     justify-content: center;

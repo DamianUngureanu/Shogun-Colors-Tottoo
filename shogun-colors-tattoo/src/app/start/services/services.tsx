@@ -39,14 +39,14 @@ const Services = ({
               <h2 className={classes.priceService} key={"price" + index}>
                 {element.price} lei
               </h2>
-              <span
+              <p
                 className={classes.descriptionService}
                 key={"description" + index}
               >
                 {language == "ro"
                   ? element.descriptionRO
                   : element.descriptionEN}
-              </span>
+              </p>
             </div>
           );
         })}

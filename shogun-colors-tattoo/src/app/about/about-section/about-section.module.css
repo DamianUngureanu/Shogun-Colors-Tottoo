@@ -17,13 +17,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+
+    & p {
+      font-size: var(--font-size-4);
+    }
   }
 }
 .container[data-orientation="default"] {
-  flex-direction: row !important;
+  flex-direction: row;
 }
 .container[data-orientation="reverse"] {
-  flex-direction: row-reverse !important;
+  flex-direction: row-reverse;
 }
 .imageContainer {
   height: 100%;
@@ -35,5 +40,14 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container[data-orientation="default"] {
+    flex-direction: column !important;
+  }
+  .container[data-orientation="reverse"] {
+    flex-direction: column-reverse !important;
   }
 }
