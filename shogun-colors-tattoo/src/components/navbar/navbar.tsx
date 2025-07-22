@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarDesktop from "./navbar-desktop";
 import { Language } from "@/languages/language-type";
-import NavbarMobile from "./navbar-mobile";
+import NavbarPhone from "./navbar-phone";
 
 interface NavbarProps {
   homeText: string;
@@ -13,7 +13,7 @@ interface NavbarProps {
   height: number;
   scrollPosition: number;
   isScrollingUp: boolean;
-  language: string;
+  language: "ro" | "en";
   setLanguage: (lang: Language) => void;
 }
 
@@ -47,9 +47,7 @@ const Navbar = ({
       />
     );
   return (
-    <NavbarMobile
-      width={width}
-      height={height}
+    <NavbarPhone
       language={language}
       setLanguage={(lang) => setLanguage(lang)}
       homeText={homeText}

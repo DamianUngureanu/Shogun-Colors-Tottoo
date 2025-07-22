@@ -35,11 +35,7 @@ const Questions = () => {
         width={width}
         background={QuestionPageData.startingImage}
       ></PageStarter>
-      <Container
-        width={width}
-        corners={[true, true, true, true]}
-        className={classes.questionsContainer}
-      >
+      <div className={classes.questionsContainer}>
         {QuestionPageData.questions.map((question, index) => {
           return (
             <Question
@@ -49,7 +45,7 @@ const Questions = () => {
             />
           );
         })}
-      </Container>
+      </div>
       <Footer
         width={width}
         motoText={t("moto")}
