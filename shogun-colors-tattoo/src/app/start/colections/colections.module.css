@@ -39,6 +39,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  & p {
+    margin: 10px 0;
+    font-weight: 700;
+  }
 }
 
 .openButton {
@@ -99,28 +103,38 @@
     background-color: var(--background-transparent);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    /* &:active {
+      &::after {
+        content: "www";
+        position: absolute;
+        inset: 0 0 0 0;
+        background: red;
+        z-index: 10;
+      }
+    } */
     & section {
       flex: 1;
       min-height: 0;
-      cursor: pointer;
       overflow: hidden;
       transition: 0.3s;
 
-      &:hover {
+      &:active {
         & img {
           object-fit: contain;
+          /* pointer-events: none; */
         }
       }
-      &:hover + * {
+
+      &:active + * {
         flex: 0;
       }
-      &:hover + * + * {
+      &:active + * + * {
         flex: 0;
       }
-      &:has(+ *:hover) {
+      &:has(+ *:active) {
         flex: 0;
       }
-      &:has(+ * + *:hover) {
+      &:has(+ * + *:active) {
         flex: 0;
       }
       & img {

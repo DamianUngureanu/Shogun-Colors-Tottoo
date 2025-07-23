@@ -31,10 +31,10 @@ const About = () => {
         language={language}
         setLanguage={(lang: Language) => setLanguage(lang)}
       ></Navbar>
-      <PageStarter
+      {/* <PageStarter
         width={width}
         background={AboutPageData.backgroundImage}
-      ></PageStarter>
+      ></PageStarter> */}
       <Container
         width={width}
         corners={[true, true, true, true]}

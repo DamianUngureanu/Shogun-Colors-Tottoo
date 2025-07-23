@@ -33,12 +33,12 @@ const Services = ({
         {servicesData.map((element, index) => {
           return (
             <div className={classes.serviceContainer} key={"container" + index}>
-              <h2 className={classes.nameService} key={"name" + index}>
+              <p className={classes.nameService} key={"name" + index}>
                 {language == "ro" ? element.nameRO : element.nameEN}
-              </h2>
-              <h2 className={classes.priceService} key={"price" + index}>
+              </p>
+              <p className={classes.priceService} key={"price" + index}>
                 {element.price} lei
-              </h2>
+              </p>
               <p
                 className={classes.descriptionService}
                 key={"description" + index}

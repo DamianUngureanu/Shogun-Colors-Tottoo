@@ -30,9 +30,9 @@ const QueteDesign = ({
     >
       <defs>
         <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="25%" stopColor="rgb(130, 149, 156)" />
-          <stop offset="50%" stopColor="rgb(219, 231, 245)" />
-          <stop offset="75%" stopColor="rgb(130, 149, 156)" />
+          <stop offset="25%" stopColor="#e0e0e0ff" />
+          <stop offset="50%" stopColor="#e0e0e0ff" />
+          <stop offset="75%" stopColor="#e0e0e0ff" />
         </linearGradient>
         <mask id="svgMaskQueteDesign">
           <g fill={color}>

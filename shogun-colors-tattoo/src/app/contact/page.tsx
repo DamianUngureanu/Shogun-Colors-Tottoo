@@ -30,7 +30,7 @@ const Contact = () => {
         language={language}
         setLanguage={(lang: Language) => setLanguage(lang)}
       ></Navbar>
-      <PageStarter width={width}></PageStarter>
+      {/* <PageStarter width={width}></PageStarter> */}
       <ContactParagraph
         width={width}
         contactText={t("contact")}

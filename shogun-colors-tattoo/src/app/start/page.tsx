@@ -51,21 +51,6 @@ const Start = () => {
           colectionMedia={ColectionData}
           language={language}
         ></Colections>
-        <Projects
-          moreText={t("more")}
-          width={width}
-          bestImage1={bestImage1}
-          bestImage2={bestImage2}
-          bestImage3={bestImage3}
-          image1Story={"rwgver"}
-          image2Story={"wrvwrgw"}
-          image3Story={"wgwrgwgr"}
-        />
-        <br />
-        <br />
-        <Quete width={width} queteText={HomePageData.quote} />
-        <br />
-        <br />
         <Services
           width={width}
           language={language}
@@ -74,6 +59,25 @@ const Start = () => {
           contactText={t("contact")}
           servicesData={HomePageData.services}
         />
+
+        <br />
+        <br />
+        <Quete width={width} queteText={HomePageData.quote} />
+        <br />
+        <br />
+        <Projects
+          moreText={t("more")}
+          width={width}
+          bestImage1={bestImage1}
+          bestImage2={bestImage2}
+          bestImage3={bestImage3}
+          image1Story={
+            "rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier"
+          }
+          image2Story={"wrvwrgw"}
+          image3Story={"wgwrgwgr"}
+        />
+
         <Footer
           width={width}
           motoText={t("moto")}

@@ -31,10 +31,10 @@ const Questions = () => {
         language={language}
         setLanguage={(lang: Language) => setLanguage(lang)}
       ></Navbar>
-      <PageStarter
+      {/* <PageStarter
         width={width}
         background={QuestionPageData.startingImage}
-      ></PageStarter>
+      ></PageStarter> */}
       <div className={classes.questionsContainer}>
         {QuestionPageData.questions.map((question, index) => {
           return (

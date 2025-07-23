@@ -32,7 +32,7 @@ const Gallery = () => {
         language={language}
         setLanguage={(lang: Language) => setLanguage(lang)}
       />
-      <PageStarter width={width} />
+      {/* <PageStarter width={width} /> */}
       <BestTattoo
         images={bestTattoo}
         width={width}
