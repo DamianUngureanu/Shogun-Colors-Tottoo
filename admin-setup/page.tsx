@@ -3,7 +3,7 @@ import Container from "@/components/container";
 import classes from "./admin.module.css";
 import { useWindowDimensions } from "@/hooks/use-window-dimension";
 import React, { useState } from "react";
-import { PasswordVerification } from "@/../../scripts/admin-scripts";
+import { PasswordVerification } from "./scripts/admin-scripts";
 import Button from "@/components/button";
 import Input from "@/components/input";
 import Acasa from "./acasa";
