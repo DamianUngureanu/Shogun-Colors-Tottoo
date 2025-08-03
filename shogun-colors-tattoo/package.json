@@ -4,8 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "ts-node src/scripts/generate-images",
-    "prebuild": "ts-node src/scripts/generate-images",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
