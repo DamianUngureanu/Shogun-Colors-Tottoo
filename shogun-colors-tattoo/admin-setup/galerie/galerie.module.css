@@ -1,0 +1,12 @@
+.inputContainer {
+  & textarea {
+    background: var(--background-secondary);
+    border: none;
+  }
+}
+.textareaContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
