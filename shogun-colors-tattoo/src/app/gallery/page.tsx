@@ -38,10 +38,10 @@ const Gallery = () => {
         width={width}
         bestTattooText={t("bestTattoos")}
       />
-      <TattooCollection
+      {/* <TattooCollection
         width={width}
         tattooColectionText={"Tattoo Colections"}
-      />
+      /> */}
       <OtherTattoo width={width} otherTattooText={t("otherTattoos")} />
       <Footer
         width={width}

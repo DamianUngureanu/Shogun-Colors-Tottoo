@@ -36,9 +36,7 @@ const Services = ({
               <p className={classes.nameService} key={"name" + index}>
                 {language == "ro" ? element.nameRO : element.nameEN}
               </p>
-              <p className={classes.priceService} key={"price" + index}>
-                {element.price} lei
-              </p>
+
               <p
                 className={classes.descriptionService}
                 key={"description" + index}

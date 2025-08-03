@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  row-gap: 90px;
   align-items: center;
   flex-direction: column;
 
@@ -14,19 +15,24 @@
   width: 90%;
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
   position: relative;
   z-index: 2;
 
   & .serviceContainer:first-of-type {
     border-top: none;
   }
+  font-size: var(--font-size-5) !important;
 }
 .serviceContainer {
   width: 100%;
   padding: 20px;
   border-top: 2px solid var(--light-color);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 
   & p,
   h2 {

@@ -10,9 +10,6 @@ import useWindowScroll from "@/hooks/use-window-scroll";
 import Colections from "./colections";
 import Projects from "./projects";
 
-import bestImage1 from "@/public/best-tattoo/best-tattoo-1.webp";
-import bestImage2 from "@/public/best-tattoo/best-tattoo-2.jpg";
-import bestImage3 from "@/public/best-tattoo/best-tattoo-3.webp";
 import LoadingScreen from "@/components/loading-screen";
 import Quete from "./quete";
 import Services from "./services";
@@ -51,6 +48,21 @@ const Start = () => {
           colectionMedia={ColectionData}
           language={language}
         ></Colections>
+
+        {/* <br />
+        <br />
+        <Quete width={width} queteText={HomePageData.quote} />
+        <br />
+        <br /> */}
+        <Projects
+          moreText={t("more")}
+          width={width}
+          image1Story={
+            "rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier"
+          }
+          image2Story={"wrvwrgw"}
+          image3Story={"wgwrgwgr"}
+        />
         <Services
           width={width}
           language={language}
@@ -58,24 +70,6 @@ const Start = () => {
           descriptionText={"descriereeeee"}
           contactText={t("contact")}
           servicesData={HomePageData.services}
-        />
-
-        <br />
-        <br />
-        <Quete width={width} queteText={HomePageData.quote} />
-        <br />
-        <br />
-        <Projects
-          moreText={t("more")}
-          width={width}
-          bestImage1={bestImage1}
-          bestImage2={bestImage2}
-          bestImage3={bestImage3}
-          image1Story={
-            "rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier rwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bierrwgvjhbbh bibibibi bibibibiubnoiubnoiuboiub oibnihbiboiubiobihbikb ikjbobouboiubnoiub oboiubouboiuboub oiuboubouboubo ubouboiboibuob oubouboubouboiuboiu bier"
-          }
-          image2Story={"wrvwrgw"}
-          image3Story={"wgwrgwgr"}
         />
 
         <Footer

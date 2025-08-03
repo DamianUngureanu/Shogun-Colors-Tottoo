@@ -111,7 +111,6 @@ async function handleSavingNewImage(
         "i"
       );
       const found = files.find((f) => regex.test(f));
-      console.log("------------a ajuns sa sterga", found);
       if (found) {
         const imagePath = join(publicDir, found);
         try {

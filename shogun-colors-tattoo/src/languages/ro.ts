@@ -8,7 +8,7 @@ const ro = {
   more: "Mai multe",
   services: "Servicii",
   media: "Media",
-  moto: "Ne vedem la urmatorul!",
+  moto: "#NeVedemLaUrmatorul",
   whatsapp: "Whatsapp",
   email: "E-mail",
   location: "Locație",
@@ -20,7 +20,7 @@ const ro = {
   open: "Deschide",
   bestTattoos: "Tatuaje Top",
   tattooColection: "Colectie Tatuaje",
-  otherTattoos: "Altele Tatuaje",
+  otherTattoos: "Convenți de Tatuaje și Evenimente",
 };
 
 export default ro;

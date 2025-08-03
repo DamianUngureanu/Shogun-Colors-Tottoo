@@ -6,18 +6,30 @@ export const HomePageData: HomePageType = {
   quote: "citat de la salonss",
   services: [
     {
-      nameRO: "tatuaj micaaaaaaa",
-      nameEN: "tatuaj micaaaaaa",
-      price: 2998,
-      descriptionRO: "tatuaj mic",
-      descriptionEN: "tatuaj mic",
+      nameRO: "Tatuaje artistice",
+      nameEN: "Artistic tattoo",
+      descriptionRO: "Tatuaje artistice, personalizate",
+      descriptionEN: "Artistic tattoo, custome",
     },
     {
-      nameRO: "tatuaj micaaaaaaa",
-      nameEN: "tatuaj micaaaaaa",
-      price: 2998,
-      descriptionRO: "tatuaj mic",
-      descriptionEN: "tatuaj mic",
+      nameRO: "Tatuaje de acoperire",
+      nameEN: "Cover-up",
+      descriptionRO: "Desenam peste alte tatuaje",
+      descriptionEN: "We tattoo over another tattoo",
+    },
+    {
+      nameRO: "Tatuaje cosmetice",
+      nameEN: "Cosmetic tattoo",
+      descriptionRO: "Tatuaje minore, estetice",
+      descriptionEN: "Small, estetic tattoos",
+    },
+    {
+      nameRO: "Consultanta",
+      nameEN: "Consultation",
+      descriptionRO:
+        "Putem avea o discutie despre ce iti doresti, personalizand tatajul si sa decidem pretul pentru el",
+      descriptionEN:
+        "We can have a conversation about what you want, personalize the tattoo, and decide on the price together.",
     },
   ],
 };

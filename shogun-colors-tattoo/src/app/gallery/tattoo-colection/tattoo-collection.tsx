@@ -18,7 +18,6 @@ const TattooCollection = ({
 }: TattooCollectionProps) => {
   const [processingTattooCollection, setProcessingTattooCollection] =
     useState<CollectionEntryType[]>(tattooCollection);
-  const [isOpen, setIsOpen] = useState<boolean>(true);
 
   // Functie pentru a modifica visible pentru o colectie
   const addVisibleImages = (collectionName: string, number: number) => {
@@ -56,7 +55,8 @@ const TattooCollection = ({
             className={classes.collectionContainer}
             key={element.collectionName + index}
           >
-            <h1>{element.collectionName}</h1>
+            <h2>{element.collectionName}</h2>
+            <br />
             <div className={classes.imagesContainer}>
               {element.images.map((image, imgIndex) => (
                 <img
@@ -69,19 +69,20 @@ const TattooCollection = ({
                   )}
                 />
               ))}
+              <div className={classes.buttonsContainer}>
+                <Button
+                  onClick={() => addVisibleImages(element.collectionName, -4)}
+                >
+                  hidden
+                </Button>
+                <Button
+                  onClick={() => addVisibleImages(element.collectionName, 4)}
+                >
+                  more
+                </Button>
+              </div>
             </div>
-            <div className={classes.buttonsContainer}>
-              <Button
-                onClick={() => addVisibleImages(element.collectionName, -4)}
-              >
-                hidden
-              </Button>
-              <Button
-                onClick={() => addVisibleImages(element.collectionName, 4)}
-              >
-                more
-              </Button>
-            </div>
+            {/* <div className={classes.buttonsContainer}></div> */}
           </div>
         );
       })}

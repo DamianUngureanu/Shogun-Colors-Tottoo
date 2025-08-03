@@ -34,15 +34,16 @@ const Colections = ({
   const [processingTattooCollection, setProcessingTattooCollection] =
     useState<CollectionEntryType[]>(colectionMedia);
   useEffect(() => {
-    console.log(slide);
-    if (slide.xSlide == -1 && slideMobileOpen) {
-      cont > colectionMedia.length * -1 + 1 ? setCont(cont - 1) : {};
-      setSlideMobileOpen(false);
-    } else if (slide.xSlide == 1 && slideMobileOpen) {
-      cont < 0 ? setCont(cont + 1) : {};
-      setSlideMobileOpen(false);
-    } else if (slide.xSlide == 0) {
-      setSlideMobileOpen(true);
+    if (width < 768) {
+      if (slide.xSlide == -1 && slideMobileOpen) {
+        cont > colectionMedia.length * -1 + 1 ? setCont(cont - 1) : {};
+        setSlideMobileOpen(false);
+      } else if (slide.xSlide == 1 && slideMobileOpen) {
+        cont < 0 ? setCont(cont + 1) : {};
+        setSlideMobileOpen(false);
+      } else if (slide.xSlide == 0) {
+        setSlideMobileOpen(true);
+      }
     }
   }, [slide]);
   return (

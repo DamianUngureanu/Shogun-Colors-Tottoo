@@ -10,7 +10,7 @@ const en = {
   more: "More",
   services: "Services",
   media: "Media",
-  moto: "See you at the next one!",
+  moto: "#SeeYouAtTheNextOne",
   whatsapp: "Whatsapp",
   email: "E-mail",
   location: "Location",
@@ -22,7 +22,7 @@ const en = {
   open: "Open",
   bestTattoos: "Best Tattoos",
   tattooColection: "Tattoo Collection",
-  otherTattoos: "Other Tattoos",
+  otherTattoos: "Tattoo Conventions and Events",
 };
 
 export default en;

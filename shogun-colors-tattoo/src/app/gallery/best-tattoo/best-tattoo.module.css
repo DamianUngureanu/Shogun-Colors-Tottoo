@@ -4,7 +4,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   width: 100%;
-  height: 170vh;
+  padding-top: 190px;
 
   & h1 {
     position: relative;

@@ -9,9 +9,17 @@
   font-family: "Comfortaa", "Quicksand", "Segoe UI", "Helvetica Neue",
     sans-serif;
 }
+textarea {
+  min-width: 200px;
+  min-height: 200px;
+}
 a {
   text-decoration: none;
   color: var(--color);
+
+  &:hover {
+    transform: translateY(-3px);
+  }
 }
 h1 {
   font-size: var(--font-size-6);

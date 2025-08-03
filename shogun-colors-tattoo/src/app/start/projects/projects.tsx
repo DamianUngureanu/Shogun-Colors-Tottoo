@@ -7,6 +7,7 @@ import classNames from "classnames";
 import Modal from "@/components/modal";
 
 import bestTattoo from "@/data/best-tattoo";
+import bestTattooText from "@/data/best-tattoo-text";
 
 interface ProjectsProps {
   moreText: string;
@@ -14,9 +15,6 @@ interface ProjectsProps {
   image2Story: string;
   image3Story: string;
   width: number;
-  bestImage1: StaticImageData;
-  bestImage2: StaticImageData;
-  bestImage3: StaticImageData;
 }
 
 const Projects = ({
@@ -25,9 +23,6 @@ const Projects = ({
   image1Story,
   image2Story,
   image3Story,
-  bestImage1,
-  bestImage2,
-  bestImage3,
 }: ProjectsProps) => {
   const [isMobile, setIsMobile] = useState<boolean>(width <= 768);
   useEffect(() => {
@@ -44,17 +39,25 @@ const Projects = ({
       )}
       isBackdrop={false}
     >
-      <h1 className={classes.title}>Best Tattoos</h1>
+      {/* <h1 className={classes.title}>Best Tattoos</h1> */}
       {bestTattoo.map((element, index) => {
-        return (
-          <section style={{ zIndex: index + 1 }} key={"best tattoo" + index}>
-            <img src={element.src} alt="best tattoo 1" />
-            {!isMobile && <p>{image1Story}</p>}
-            {isMobile && (
-              <Button onClick={() => setIsOpenModal(index)}>{moreText}</Button>
-            )}
-          </section>
-        );
+        if (index < 3)
+          return (
+            <section
+              className={classes.bestSection}
+              style={{ zIndex: index + 1 }}
+              key={"best tattoo" + index}
+              data-reverse={index % 2 == 0 ? "default" : "reverse"}
+            >
+              <img src={element.src} alt="best tattoo 1" />
+              {!isMobile && <p>{bestTattooText.text[index]}</p>}
+              {isMobile && (
+                <Button onClick={() => setIsOpenModal(index)}>
+                  {moreText}
+                </Button>
+              )}
+            </section>
+          );
       })}
       {isOpenModal !== undefined && (
         <Modal onClose={() => setIsOpenModal(undefined)}>buna</Modal>
