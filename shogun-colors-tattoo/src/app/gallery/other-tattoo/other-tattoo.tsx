@@ -15,7 +15,7 @@ const OtherTattoo = ({ width, otherTattooText }: OtherTattooProps) => {
       width={width}
       corners={[true, true, true, true]}
     >
-      <h1>{otherTattooText}</h1>
+      {/* <h1>{otherTattooText}</h1> */}
       <div className={classes.imagesContainer}>
         {otherTattoos.map((image, index) => (
           <img

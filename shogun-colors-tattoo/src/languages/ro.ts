@@ -20,7 +20,8 @@ const ro = {
   open: "Deschide",
   bestTattoos: "Tatuaje Top",
   tattooColection: "Colectie Tatuaje",
-  otherTattoos: "Convenți de Tatuaje și Evenimente",
+  otherTattoos: "Alte Tatuaje",
+  aboutEvents: "Despre Evenimente",
 };
 
 export default ro;

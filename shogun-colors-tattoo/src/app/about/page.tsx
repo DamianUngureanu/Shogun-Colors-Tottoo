@@ -2,7 +2,6 @@
 import classes from "./about.module.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import PageStarter from "@/components/page-starter";
 import { useWindowDimensions } from "@/hooks/use-window-dimension";
 import useWindowScroll from "@/hooks/use-window-scroll";
 import { Language } from "@/languages/language-type";
@@ -11,6 +10,7 @@ import { useLanguage } from "@/languages";
 import AboutSection from "./about-section";
 import Container from "@/components/container";
 import AboutPageData from "@/data/about-page-data";
+import Events from "./events";
 
 const About = () => {
   const { scrollPosition, isScrollingUp } = useWindowScroll();
@@ -58,6 +58,7 @@ const About = () => {
           );
         })}
       </Container>
+      <Events width={width} eventsTitleText={t("aboutEvents")} />
 
       <Footer
         width={width}

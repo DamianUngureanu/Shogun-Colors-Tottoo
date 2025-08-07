@@ -1,8 +1,8 @@
 const bestTattooText = {
   "text": [
-    "aertgh",
-    "aergaerg",
-    "ergaeg"
+    "aaaaaaaaaa",
+    "ssssssssss",
+    "ddddddddddddddd"
   ]
 };
 

@@ -33,11 +33,11 @@ const Gallery = () => {
         setLanguage={(lang: Language) => setLanguage(lang)}
       />
       {/* <PageStarter width={width} /> */}
-      <BestTattoo
+      {/* <BestTattoo
         images={bestTattoo}
         width={width}
         bestTattooText={t("bestTattoos")}
-      />
+      /> */}
       {/* <TattooCollection
         width={width}
         tattooColectionText={"Tattoo Colections"}

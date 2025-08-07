@@ -6,7 +6,6 @@ async function handleSavingNewImage(
   imageName,
   onDelete = false
 ) {
-  console.log(onDelete);
   if (!onDelete) {
     try {
       const publicDir = resolve("src/public", folderName);
