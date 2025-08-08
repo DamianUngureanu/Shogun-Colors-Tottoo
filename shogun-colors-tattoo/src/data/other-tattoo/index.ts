@@ -1,23 +1,63 @@
-import img1 from "@/public/other-tattoo/profile-image0.jpeg";
-import img2 from "@/public/other-tattoo/profile-image1.jpeg";
-import img3 from "@/public/other-tattoo/profile-image2.jpeg";
-import img4 from "@/public/other-tattoo/profile-image3.jpeg";
-import img5 from "@/public/other-tattoo/profile-image4.jpeg";
-import img6 from "@/public/other-tattoo/profile-image5.jpeg";
-import img7 from "@/public/other-tattoo/profile-image6.jpeg";
-import img8 from "@/public/other-tattoo/profile-image7.jpeg";
-import img9 from "@/public/other-tattoo/profile-image8.jpeg";
+import img0 from "@/public/other-tattoo/profile-image0.jpeg";
+import img1 from "@/public/other-tattoo/profile-image1.jpeg";
+import img2 from "@/public/other-tattoo/profile-image10.jpeg";
+import img3 from "@/public/other-tattoo/profile-image11.jpeg";
+import img4 from "@/public/other-tattoo/profile-image12.jpeg";
+import img5 from "@/public/other-tattoo/profile-image13.jpeg";
+import img6 from "@/public/other-tattoo/profile-image14.jpeg";
+import img7 from "@/public/other-tattoo/profile-image15.jpeg";
+import img8 from "@/public/other-tattoo/profile-image16.jpeg";
+import img9 from "@/public/other-tattoo/profile-image17.jpeg";
+import img10 from "@/public/other-tattoo/profile-image18.jpeg";
+import img11 from "@/public/other-tattoo/profile-image19.jpeg";
+import img12 from "@/public/other-tattoo/profile-image2.jpeg";
+import img13 from "@/public/other-tattoo/profile-image20.jpeg";
+import img14 from "@/public/other-tattoo/profile-image21.jpeg";
+import img15 from "@/public/other-tattoo/profile-image22.jpeg";
+import img16 from "@/public/other-tattoo/profile-image23.jpeg";
+import img17 from "@/public/other-tattoo/profile-image24.jpeg";
+import img18 from "@/public/other-tattoo/profile-image25.jpeg";
+import img19 from "@/public/other-tattoo/profile-image26.jpeg";
+import img20 from "@/public/other-tattoo/profile-image27.jpeg";
+import img21 from "@/public/other-tattoo/profile-image28.jpeg";
+import img22 from "@/public/other-tattoo/profile-image29.jpeg";
+import img23 from "@/public/other-tattoo/profile-image3.jpeg";
+import img24 from "@/public/other-tattoo/profile-image30.jpeg";
+import img25 from "@/public/other-tattoo/profile-image31.jpeg";
+import img26 from "@/public/other-tattoo/profile-image32.jpeg";
+import img27 from "@/public/other-tattoo/profile-image33.jpeg";
+import img28 from "@/public/other-tattoo/profile-image34.jpeg";
+import img29 from "@/public/other-tattoo/profile-image35.jpeg";
+import img30 from "@/public/other-tattoo/profile-image36.jpeg";
+import img31 from "@/public/other-tattoo/profile-image37.jpeg";
+import img32 from "@/public/other-tattoo/profile-image38.jpeg";
+import img33 from "@/public/other-tattoo/profile-image39.jpeg";
+import img34 from "@/public/other-tattoo/profile-image4.jpeg";
+import img35 from "@/public/other-tattoo/profile-image40.jpeg";
+import img36 from "@/public/other-tattoo/profile-image41.jpeg";
+import img37 from "@/public/other-tattoo/profile-image42.jpeg";
+import img38 from "@/public/other-tattoo/profile-image43.jpeg";
+import img39 from "@/public/other-tattoo/profile-image44.jpeg";
+import img40 from "@/public/other-tattoo/profile-image45.jpeg";
+import img41 from "@/public/other-tattoo/profile-image46.jpeg";
+import img42 from "@/public/other-tattoo/profile-image47.jpeg";
+import img43 from "@/public/other-tattoo/profile-image48.jpeg";
+import img44 from "@/public/other-tattoo/profile-image49.jpeg";
+import img45 from "@/public/other-tattoo/profile-image5.jpeg";
+import img46 from "@/public/other-tattoo/profile-image50.jpeg";
+import img47 from "@/public/other-tattoo/profile-image51.jpeg";
+import img48 from "@/public/other-tattoo/profile-image52.jpeg";
+import img49 from "@/public/other-tattoo/profile-image53.jpeg";
+import img50 from "@/public/other-tattoo/profile-image54.jpeg";
+import img51 from "@/public/other-tattoo/profile-image55.jpeg";
+import img52 from "@/public/other-tattoo/profile-image56.jpeg";
+import img53 from "@/public/other-tattoo/profile-image57.jpeg";
+import img54 from "@/public/other-tattoo/profile-image6.jpeg";
+import img55 from "@/public/other-tattoo/profile-image7.jpeg";
+import img56 from "@/public/other-tattoo/profile-image8.jpeg";
+import img57 from "@/public/other-tattoo/profile-image9.jpeg";
+
 
 import { StaticImageData } from "next/image";
-const bestTattoo = [
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  img9,
-] as StaticImageData[];
-export default bestTattoo;
+const otherTattoo = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, img49, img50, img51, img52, img53, img54, img55, img56, img57] as StaticImageData[];
+export default otherTattoo;

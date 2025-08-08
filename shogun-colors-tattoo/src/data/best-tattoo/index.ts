@@ -1,6 +1,6 @@
-import img0 from "@/public/best-tattoo/profile-image0.png";
-import img1 from "@/public/best-tattoo/profile-image1.png";
-import img2 from "@/public/best-tattoo/profile-image2.png";
+import img0 from "@/public/best-tattoo/profile-image0.jpeg";
+import img1 from "@/public/best-tattoo/profile-image1.jpeg";
+import img2 from "@/public/best-tattoo/profile-image2.jpeg";
 
 
 import { StaticImageData } from "next/image";

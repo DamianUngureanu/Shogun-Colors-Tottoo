@@ -25,14 +25,6 @@ const Events = ({ width, eventsTitleText }: EventsProps) => {
             className={classes.image}
           />
         ))}
-        {aboutEvents.map((image, index) => (
-          <img
-            key={`about-events-${index}`}
-            src={image.src}
-            alt={`Other Tattoo ${index + 1}`}
-            className={classes.image}
-          />
-        ))}
       </div>
     </Container>
   );
