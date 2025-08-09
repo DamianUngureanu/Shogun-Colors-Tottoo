@@ -11,13 +11,21 @@ import { FaRegCircle } from "react-icons/fa";
 import CollectionEntryType from "@/types/colection-entry-type";
 import { MdArrowForwardIos } from "react-icons/md";
 import { useMouseSlide } from "@/hooks/use-mouse-slide";
+import { StaticImageData } from "next/image";
 
 interface ColectionsProps {
   titleText: string;
   openText: string;
   width: number;
-  colectionMedia: CollectionEntryType[];
+  colectionMedia: StaticImageData[];
   language: "ro" | "en";
+}
+function groupInChunks<T>(arr: T[], chunkSize: number): T[][] {
+  const result: T[][] = [];
+  for (let i = 0; i + chunkSize <= 15; i += chunkSize) {
+    result.push(arr.slice(i, i + chunkSize));
+  }
+  return result;
 }
 
 const Colections = ({
@@ -31,12 +39,16 @@ const Colections = ({
   const slide = useMouseSlide(Slider.current);
   const [slideMobileOpen, setSlideMobileOpen] = useState<boolean>(true);
   const [cont, setCont] = useState<number>(0);
-  const [processingTattooCollection, setProcessingTattooCollection] =
-    useState<CollectionEntryType[]>(colectionMedia);
+  const [processingTattooCollection, setProcessingTattooCollection] = useState<
+    StaticImageData[][]
+  >(groupInChunks(colectionMedia, 3));
+
   useEffect(() => {
     if (width < 768) {
       if (slide.xSlide == -1 && slideMobileOpen) {
-        cont > colectionMedia.length * -1 + 1 ? setCont(cont - 1) : {};
+        cont > processingTattooCollection.length * -1 + 1
+          ? setCont(cont - 1)
+          : {};
         setSlideMobileOpen(false);
       } else if (slide.xSlide == 1 && slideMobileOpen) {
         cont < 0 ? setCont(cont + 1) : {};
@@ -53,9 +65,9 @@ const Colections = ({
       className={classes.container}
     >
       <div className={classes.content}>
-        <h1>{titleText}</h1>
+        {/* <h1>{titleText}</h1> */}
         <span className={classes.contor}>
-          {colectionMedia.map((element, index) => {
+          {processingTattooCollection.map((element, index) => {
             if (cont * -1 == index) return <FaDotCircle key={index} />;
             else
               return (
@@ -72,9 +84,9 @@ const Colections = ({
                   key={index}
                   style={{ "--itemIndex": cont + index } as React.CSSProperties}
                 >
-                  <p>{element.collectionName}</p>
+                  {/* <p>{element.collectionName}</p> */}
                   <div className={classes.mediaPhotos}>
-                    {element.images.map((e, i) => {
+                    {element.map((e, i) => {
                       if (i < 3)
                         return (
                           <section key={"colection images" + i}>
@@ -99,7 +111,9 @@ const Colections = ({
             className={classes.rightArrow}
             size={width < 1000 ? width / 10 : 100}
             onClick={() => {
-              cont > colectionMedia.length * -1 + 1 ? setCont(cont - 1) : {};
+              cont > processingTattooCollection.length * -1 + 1
+                ? setCont(cont - 1)
+                : {};
             }}
           />
           <MdArrowForwardIos

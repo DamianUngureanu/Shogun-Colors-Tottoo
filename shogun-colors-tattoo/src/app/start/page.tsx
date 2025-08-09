@@ -16,7 +16,7 @@ import Services from "./services";
 import Footer from "@/components/footer";
 
 import { HomePageData } from "@/data/home-page-data";
-import ColectionData from "@/data/tattoo-collection";
+import ColectionData from "@/data/other-tattoo";
 
 const Start = () => {
   const { width, height, isLoading } = useWindowDimensions();
