@@ -37,7 +37,7 @@ const Footer = ({
 }: FooterProps) => {
   return (
     <footer className={classes.container}>
-      <h1>{motoText}</h1>
+      {width < 768 ? <h2>{motoText}</h2> : <h2>{motoText}</h2>}
       <section>
         <div className={classes.logoContainer}>
           <img src={logo.src} alt="Shogun Colours Tattoo Logo" />

@@ -7,6 +7,7 @@ interface AboutSectionProps {
   title: string;
   description: string;
   orientation?: boolean;
+  width: number;
   [x: string]: any;
 }
 
@@ -14,6 +15,7 @@ const AboutSection = ({
   image,
   title,
   description,
+  width,
   orientation = false,
   ...rest
 }: AboutSectionProps) => {
@@ -29,7 +31,7 @@ const AboutSection = ({
         </div>
       )}
       <article>
-        <h1>{title}</h1>
+        {width < 768 ? <h2>{title}</h2> : <h1>{title}</h1>}
         <p>{description}</p>
       </article>
     </section>

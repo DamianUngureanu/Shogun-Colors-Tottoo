@@ -43,6 +43,7 @@ const About = () => {
         {AboutPageData.about.map((element, index) => {
           return (
             <AboutSection
+              width={width}
               key={"about section" + index}
               image={
                 element.image && !(element.image instanceof File)

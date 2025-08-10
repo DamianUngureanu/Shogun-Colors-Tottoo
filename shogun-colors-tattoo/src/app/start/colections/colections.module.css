@@ -84,6 +84,7 @@
 .contor {
   display: flex;
   gap: 10px;
+  margin-bottom: 10px;
 
   & svg {
     cursor: pointer;

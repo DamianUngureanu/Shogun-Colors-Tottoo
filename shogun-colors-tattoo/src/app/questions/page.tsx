@@ -39,6 +39,7 @@ const Questions = () => {
         {QuestionPageData.questions.map((question, index) => {
           return (
             <Question
+              width={width}
               language={language}
               question={question}
               key={"question" + index}
