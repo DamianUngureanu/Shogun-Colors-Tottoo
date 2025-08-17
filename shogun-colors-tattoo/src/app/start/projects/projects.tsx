@@ -60,7 +60,9 @@ const Projects = ({
           );
       })}
       {isOpenModal !== undefined && (
-        <Modal onClose={() => setIsOpenModal(undefined)}>buna</Modal>
+        <Modal onClose={() => setIsOpenModal(undefined)}>
+          {bestTattooText.text[isOpenModal]}
+        </Modal>
       )}
       {/* <section style={{ zIndex: 1 }}>
         <img src={bestImage1.src} alt="best tattoo 1" />

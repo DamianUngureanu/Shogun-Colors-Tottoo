@@ -1,9 +1,10 @@
 .container {
   display: flex;
   justify-content: center;
-  row-gap: 90px;
+  row-gap: 50px;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0;
 
   & h1,
   button {
