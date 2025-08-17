@@ -33,9 +33,9 @@ const Services = ({
         {servicesData.map((element, index) => {
           return (
             <div className={classes.serviceContainer} key={"container" + index}>
-              <p className={classes.nameService} key={"name" + index}>
+              <h2 className={classes.nameService} key={"name" + index}>
                 {language == "ro" ? element.nameRO : element.nameEN}
-              </p>
+              </h2>
 
               <p
                 className={classes.descriptionService}
