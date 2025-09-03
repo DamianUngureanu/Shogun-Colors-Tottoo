@@ -24,6 +24,7 @@ const en = {
   tattooColection: "Tattoo Collection",
   otherTattoos: "Other Tattoos",
   aboutEvents: "About Events",
+  videos: "Videos",
 };
 
 export default en;

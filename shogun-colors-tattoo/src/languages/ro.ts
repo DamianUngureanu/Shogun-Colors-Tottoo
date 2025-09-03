@@ -22,6 +22,7 @@ const ro = {
   tattooColection: "Colectie Tatuaje",
   otherTattoos: "Alte Tatuaje",
   aboutEvents: "Despre Evenimente",
+  videos: "Video-uri",
 };
 
 export default ro;

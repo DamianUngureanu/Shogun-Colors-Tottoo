@@ -17,6 +17,7 @@ import Footer from "@/components/footer";
 
 import { HomePageData } from "@/data/home-page-data";
 import ColectionData from "@/data/other-tattoo";
+import VideoMenu from "./video-menu";
 
 const Start = () => {
   const { width, height, isLoading } = useWindowDimensions();
@@ -27,6 +28,7 @@ const Start = () => {
   else
     return (
       <main className={classes.container}>
+        <VideoMenu videosText={t("videos")} />
         <Navbar
           width={width}
           height={height}
